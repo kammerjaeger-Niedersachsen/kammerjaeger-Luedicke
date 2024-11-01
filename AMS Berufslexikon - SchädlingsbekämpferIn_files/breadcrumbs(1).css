@@ -1,0 +1,45 @@
+/* breadcrumbs.css */
+
+.content-breadcrumb {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1em;
+    font-size: 1.05em;
+}
+
+@media screen and (min-width: 1200px) {
+    .content-breadcrumb {
+        margin-bottom: 1.5em;
+    }
+}
+
+.content-breadcrumb p span {
+    opacity: .6;
+}
+
+.content-breadcrumb .breadcrumb-divider {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.content-breadcrumb .breadcrumb-info-data {
+    margin-top: 2em;
+}
+
+.breadcrumb-row {
+    padding-left: 0;
+    padding-right: 2em;
+}
+
+@media (min-width: 991px) {
+    .breadcrumb-row {
+        padding-left: 2em;
+    }
+}
+
+.all-schwerpunkte-breadcrumb {
+    background-color: #fff;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 26px;
+}

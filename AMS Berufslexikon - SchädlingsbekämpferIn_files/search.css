@@ -1,0 +1,607 @@
+/* search.css */
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex; /* Safari */
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;  /* Safari 6.1+ */
+    flex-flow: row wrap;
+}
+
+.search-block .form-bereiche-button {
+    color: #090909;
+    text-decoration: none;
+}
+
+.search-block .form-bereiche-button:after {
+    margin-left: 5px;
+    content: "\f106";
+    font-family: 'FontAwesome';
+    font-size: 1.2em;
+}
+
+.search-block .form-bereiche-button.collapsed:after {
+    content: "\f107";
+}
+
+.search-block .form-bereiche .btn-primary {
+    margin-top: 15px;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.search-block .form-bereiche .btn-primary .fa {
+    margin-left: 7px;
+}
+
+.search-block .bereiche-counts {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.search-block .form-bereiche #bereiche > li {
+    padding-left: 0 !important;
+}
+
+.search-block .form-bereiche #bereiche > li > a,
+.search-block .form-bereiche #bereiche > li > ul > li > label {
+    max-width: 80%;
+    vertical-align: top;
+}
+
+.search-block .form-bereiche #bereiche > li > ul > li > label:before {
+    float: left;
+}
+
+.search-block label {
+    color: #000000;
+}
+
+.search-block {
+    background: #F7F7F7;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: static;
+}
+.search-block > .row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.search-block > form > div > div,
+.search-block > form > div > div > div {
+    position: static;
+}
+
+.search-block #q,
+.search-block .btn-primary {
+    margin-bottom: 5px;
+}
+
+.search-block {
+    background: #FFFFFF;
+    padding: 2em 4em;
+    position: static;
+}
+
+.search-block > form > div > div,
+.search-block > form > div > div > div {
+    position: static;
+}
+
+.search-block label,
+.tab-navigation-content {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+@media (min-width: 991px) {
+    .tab-navigation-content {
+        font-size: 1.1em;
+    }
+}
+
+.search-block label {
+    color: #000000;
+}
+
+.input-wrapper-search {
+    position: relative;
+}
+
+#berufeAutocompleteContainer {
+    margin-top: 40px;
+    background: transparent;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+#berufeAutocompleteContainer > .row > .ui-widget-content {
+    background: none !important;
+    left: auto !important;
+    width: 100% !important;
+    top: 0 !important;
+}
+
+#berufeAutocompleteContainer .ui-widget {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#berufeAutocompleteContainer ul,
+#berufeAutocompleteContainer li {
+    color: inherit !important;
+    background: #FFFFFF !important;
+    border: 0 !important;
+    font-weight: 400 !important;
+}
+
+.search-block .input-group-addon, .input-group-btn {
+    vertical-align: top;
+}
+
+.btn-search-options-main,
+.search-block button.btn[type="submit"] {
+    background-color: #2056AE;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.search-block button.btn[type="submit"].bt-btn-yellow {
+    display: flex;
+    align-items: center;
+    background-color: #FFC300;
+    color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+    .search-block button.btn[type="submit"] {
+        background-color: #F6C03E;
+        color: #000000;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .search-block button.btn[type="submit"] {
+        height: 42px;
+        padding: 0 1.9em 0 1.2em;
+    }
+}
+
+.dark-blue-bg {
+    background-color: #19448B;
+}
+
+.btn-search-options-main:hover,
+.search-block button.btn[type="submit"]:hover {
+    background-color: #19448B;
+    color: #FFFFFF;
+}
+
+.btn-search-options-main {
+    border: none;
+    border-radius: 0 !important;
+    vertical-align: top;
+    height: 34px;
+    padding: 0 .5em;
+}
+
+.btn-search-options-main:hover {
+    color: #FFFFFF;
+    outline: none !important;
+}
+.btn-search-options-main:focus {
+    color: #FFFFFF;
+    outline-color: #000000;
+    background-color: #235dba;
+}
+
+@media screen and (min-width: 1400px) {
+    .btn-search-options-main {
+        height: 48px;
+        padding: 0 1em;
+    }
+}
+
+.search-block button.btn[type="submit"] span.fa-search {
+    font-size: 1.7em;
+}
+
+.search-block button.btn[type="submit"]:hover span.fa-search {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+
+    -webkit-transition: all 0.1s 0s;
+    -moz-transition: all 0.1s 0s;
+    -o-transition: all 0.1s 0s;
+    transition: all 0.1s 0s;
+
+    transform-origin: center;
+    -webkit-transform-origin: center;
+}
+
+.search-block button.btn[type="submit"]::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: 60%;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#search_form .btn-back {
+    padding: 5px 3px;
+}
+
+#search_form .hidden-xs i.fa-sliders,
+#search_form .hidden-xs i.fa-compress {
+    margin-right: 7px;
+}
+
+.search-block button.btn[type="submit"] {
+    vertical-align: top;
+    height: 34px;
+    border: none;
+    border-radius: 0 !important;
+    padding: 0 1.4em 0 1em;
+}
+
+input#q {
+    position: relative;
+    padding-right: 35px;
+}
+
+.search-block #wunsch_beruf,
+.search-block #q,
+.search-block .btn-primary {
+    margin-bottom: 5px;
+}
+
+input#wunsch_beruf,
+input#wunsch_ausbildung,
+input#q {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 35px;
+    background-color: #EEEEEE;
+    border: none;
+    color: #1f1f1f;
+    font-size: 1.2em
+}
+
+input#wunsch_beruf {
+    border: 1px solid #797979;
+}
+
+@media screen and (min-width: 360px){
+    input#wunsch_beruf {
+        width: 230px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    input#wunsch_beruf {
+        width: 350px;
+    }
+}
+
+.search-block .form-inputs .row > div label,
+.tab-navigation-content .form-inputs > div label,
+.form-lexikon-beruf > div label {
+    font-weight: 600;
+}
+
+.search-block .form-inputs .schule label,
+.tab-navigation-content .form-inputs .schule label,
+.form-lexikon-beruf .schule label {
+    color: #004a99 !important;
+}
+
+input[type=checkbox] {
+    position: absolute; opacity: 0;
+}
+
+.search-block .form-inputs .lehre label,
+.tab-navigation-content .form-inputs .lehre label,
+.form-lexikon-beruf .lehre label {
+    color: #C14C1A !important;
+}
+
+input[type=checkbox] + label,
+input.input-radio[type=radio] + label {
+    color: #020202;
+}
+
+input[type=checkbox] + label span.fa,
+input.input-radio[type=radio] + label span.fa {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+input#q + span {
+    font-size: 1.3em;
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    z-index: 100;
+    display: none;
+}
+
+input#wunsch_ausbildung + span,
+input#wunsch_beruf + span,
+input#q + span {
+    font-size: 1.6em;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    z-index: 100;
+    display: none;
+}
+
+@media screen and (min-width: 1400px) {
+    input#q {
+        height: 48px;
+    }
+}
+
+input[type=checkbox] + label > span,
+input.input-radio[type=radio] + label > span {
+    display: inline-block;
+    padding-top: 1px;
+    max-width: 70%;
+}
+
+.search-block .form-inputs .sonstige label,
+.tab-navigation-content .form-inputs .sonstige label,
+.search-block .form-inputs .sonstige1 label,
+.tab-navigation-content .form-inputs .sonstige1 label,
+.search-block .form-inputs .sonstige2 label,
+.tab-navigation-content .form-inputs .sonstige2 label,
+.form-lexikon-beruf .sonstige1 label,
+.form-lexikon-beruf .sonstige2 label {
+    color: #275A37 !important;
+}
+
+.search-block .form-inputs .uni label,
+.tab-navigation-content .form-inputs .uni label,
+.form-lexikon-beruf .uni label {
+    color: #A80014 !important;
+}
+
+@media screen and (min-width: 1400px) {
+    .search-block button.btn[type="submit"] {
+        height: 48px;
+        padding: 0 2.1em 0 1.6em;
+    }
+}
+
+.search-container {
+    display: none;
+}
+
+.search-container.search-container-xs {
+    margin-top: 5.5em;
+    margin-bottom: 1em;
+}
+
+.search-container.search-container-xs .search-block {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+.search-container.search-container-xs .erweitere-suche .col-xs-6:nth-of-type(odd),
+.search-container.search-container-xs .erweitere-suche .dropdown button:nth-of-type(odd) {
+    padding-right: 5px;
+}
+
+.search-container.search-container-xs .erweitere-suche .col-xs-6:nth-of-type(even),
+.search-container.search-container-xs .erweitere-suche .dropdown button:nth-of-type(even) {
+    padding-left: 5px;
+}
+
+.search-container.search-container-xs .erweitere-suche .dropdown button {
+    font-size: .9em;
+}
+
+.search-container.search-container-xs .erweitere-suche .dropdown-backdrop {
+    display: none;
+}
+.erweitere-suche .dropdown.open button {
+    background-color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+}
+.erweitere-suche .content-expand .content#search-ausbildungsbereich {
+    display: block;
+    background-color: #EEEEEE;
+    padding: 0.9em 1em 1em;
+    margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+    .search-container {
+        display: block;
+        position: relative;
+        margin-top: -2em;
+        -moz-box-shadow:    0 0 30px 7px rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 0 0 30px 7px rgba(0, 0, 0, .1);
+        box-shadow:         0 0 30px 7px rgba(0, 0, 0, .1);
+    }
+}
+
+.form-inputs {
+    margin-top: 1.5em;
+    font-size: 1.1em;
+}
+
+.search-block .form-inputs .row > div > div,
+.tab-navigation-content .form-inputs > div,
+.form-lexikon-beruf > div {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    .search-block .form-inputs {
+        font-size: 1.22em;
+    }
+
+    .search-block .form-inputs, .container-dossier .form-inputs {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+
+.erweitere-suche {
+    display: none;
+    margin-top: 1.1em;
+}
+
+.tab-search-heading {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.tab-search-heading.filterkategorie-heading {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.erweitere-suche .dropdown button {
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding: 1em 1em;
+    border: 1px solid #151212;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-block .bereiche-counts,
+.search-block .arten-counts,
+.search-block .bildungstraeger-counts,
+.search-block .bildungstraeger-counts,
+.search-block .standort-aktuell {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.erweitere-suche .dropdown span.caret {
+    float: right;
+    margin-top: 9px;
+}
+
+.search-block .form-erw-button button {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 600;
+}
+
+.search-block .form-erw-button button .fa {
+    margin-left: 10px;
+}
+
+.content-expand .content {
+    display: none;
+    background-color: #EEEEEE;
+    padding: .9em 1em 1em;
+    margin-bottom: 1.5em;
+}
+
+.content-filterkategorie .content {
+    display: block;
+}
+
+.tab-navigation-content #bereiche,
+.search-block .form-bereiche #bereiche,
+.tab-navigation-content #arten,
+.search-block .form-arten #arten,
+.tab-navigation-content #bildungstraeger,
+.search-block .form-bildungstraeger #bildungstraeger {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tab-navigation-content #bereiche > li,
+.search-block .form-bereiche #bereiche > li,
+.tab-navigation-content #arten > li,
+.search-block .form-arten #arten > li,
+.tab-navigation-content #bildungstraeger > li,
+.search-block .form-bildungstraeger #bildungstraeger > li {
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.search-block .form-bereiche #bereiche > li,
+.search-block .form-arten #arten > li,
+.search-block .form-bildungstraeger #bildungstraeger > li {
+    padding-left: 0 !important;
+}
+
+.tab-navigation-content #bereiche li,
+.search-block .form-bereiche #bereiche li,
+.tab-navigation-content #arten li,
+.search-block .form-arten #arten li,
+.tab-navigation-content #bildungstraeger li,
+.search-block .form-bildungstraeger #bildungstraeger li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-block .form-arten #arten > li label,
+.search-block .form-bildungstraeger #bildungstraeger > li label {
+    font-size: 1em !important;
+    max-width: 100% !important;
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.search-block .form-arten #arten > li label span,
+.search-block .form-bildungstraeger #bildungstraeger > li label span {
+    margin-left: 4px;
+    max-width: 100%;
+    display: inline;
+}
+
+.search-block .form-bereiche #bereiche > li > a,
+.search-block .form-bereiche #bereiche > li > ul > li > label,
+.search-block .form-arten #arten > li > a,
+.search-block .form-arten #arten > li > ul > li > label,
+.search-block .form-bildungstraeger #bildungstraeger > li > a,
+.search-block .form-bildungstraeger #bildungstraeger > li > ul > li > label {
+    max-width: 80%;
+    vertical-align: top;
+}
+
+.tab-navigation-content #bereiche > li > ul > li > label,
+.search-block .form-bereiche #bereiche > li > ul > li > label,
+.tab-navigation-content #arten > li > ul > li > label,
+.search-block .form-arten #arten > li > ul > li > label,
+.tab-navigation-content #bildungstraeger > li > ul > li > label,
+.search-block .form-bildungstraeger #bildungstraeger > li > ul > li > label {
+    font-weight: normal !important;
+}
+
+.tab-navigation-content #bereiche > li > a,
+.search-block .form-bereiche #bereiche > li > a,
+.tab-navigation-content #arten > li > a,
+.search-block .form-arten #arten > li > a,
+.tab-navigation-content #bildungstraeger > li > a,
+.search-block .form-bildungstraeger #bildungstraeger > li > a {
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+}

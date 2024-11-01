@@ -1,0 +1,207 @@
+/* tab-navigation-content.css */
+
+.tab-navigation-content #bereiche > li > ul {
+    padding-bottom: 6px;
+    margin-left: 10px;
+}
+
+.tab-navigation-content #bereiche > li:nth-child(even) {
+    background: #fcf3cd;
+}
+
+.tab-navigation-content .form-inputs.compare > p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+.tab-navigation-content .form-inputs.compare > div > div {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.tab-navigation-content .form-inputs.compare > div > div > label > span {
+    color: #757574;
+    font-weight: normal;
+}
+
+.tab-navigation-content .form-inputs > p:not(:first-of-type) {
+    margin-top: 25px;
+}
+
+.tab-navigation-content .form-inputs .trend-div {
+    margin-right: 50px;
+}
+
+.tab-navigation-content .form-inputs .trend-div label span {
+    max-width: 100%;
+}
+
+.tab-navigation-content {
+    border-radius: 2px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #020202;
+}
+
+.tab-navigation-content #dossier-compare-table_wrapper,
+.tab-navigation-content #dossier-table_wrapper,
+.tab-navigation-content .dossier-table-actions,
+.tab-navigation-content #list-table_wrapper {
+    margin-top: 30px;
+}
+
+.tab-navigation-content .dossier-table-actions a {
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-navigation-content .dossier-table-actions a .fa {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.tab-navigation-content #dossier-table > tbody > tr > td:last-child {
+    padding-right: 2em;
+    font-size: 1.8em;
+}
+
+.tab-navigation-content #dossier-table > tbody > tr > td:last-child a {
+    color: #8F8F8F !important;
+}
+
+.tab-navigation-content #list-table > tbody > tr > td:nth-child(2) {
+    width: 40%;
+    padding-right: 3em;
+}
+
+.tab-navigation-content #dossier-table > tbody > tr > td:last-child span {
+    cursor: pointer;
+}
+
+.tab-navigation-content #dossier-table > tbody > tr > td label {
+    font-weight: normal !important;
+    display: block;
+}
+
+.tab-navigation-content #dossier-table > tbody > tr > td label span {
+    position: relative;
+    margin-left: 30px;
+    word-break: break-word;
+}
+
+.tab-navigation-content #dossier-table .fa-info-circle {
+    color: #333333;
+}
+
+.tab-navigation-content #dossier-compare-table span.feld {
+    font-size: 1.05em;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.tab-navigation-content #dossier-compare-table td {
+    font-size: 0.95em;
+}
+
+.tab-navigation-content #dossier-compare-table span:not(.feld):not(.sr-only):not(.transparent):not(.fa):not(.visible-print) {
+    position: relative;
+}
+
+.tab-navigation-content #dossier-compare-table span:not(.feld):not(.sr-only):not(.transparent):not(.fa):not(.visible-print):after {
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: -15px;
+    top: 0;
+    content: "\f111";
+}
+
+.tab-navigation-content #dossier-compare-table .fa-info-circle {
+    color: #333333;
+    cursor: pointer;
+}
+
+.tab-navigation-content #dossier-compare-table span.lehre:after {
+    color: #C14C1A;
+}
+
+.tab-navigation-content #dossier-compare-table span.schule:after {
+    color: #004A99;
+}
+
+.tab-navigation-content #dossier-compare-table span.uni:after {
+    color: #A80014;
+}
+
+.tab-navigation-content #dossier-compare-table span.sonstige:after {
+    color: #275A37;
+}
+
+.tab-navigation-content #dossier-compare-table > tbody > tr > td,
+.tab-navigation-content #dossier-compare-table_wrapper th {
+    padding: 1em 2.9em;
+    text-align: center;
+}
+
+.tab-navigation-content #dossier-compare-table small {
+    line-height: 120%;
+    display: inline-block;
+}
+
+.tab-navigation-content #dossier-compare-table_wrapper th {
+    vertical-align: middle;
+}
+
+.tab-navigation-content #dossier-compare-table .progress {
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .tab-navigation-content #dossier-table:not(.collapsed) > tbody > tr > td:first-child,
+    .tab-navigation-content #dossier-table:not(.collapsed) > thead > tr > th:first-child,
+    .tab-navigation-content #list-table:not(.collapsed) > tbody > tr > td:first-child,
+    .tab-navigation-content #list-table:not(.collapsed) > thead > tr > th:first-child {
+        padding-left: 30px;
+    }
+
+    .tab-navigation-content #dossier-table > tbody > tr > td:last-child {
+        color: #373737 !important;
+        font-size: 1em;
+    }
+
+    .tab-navigation-content {
+        border-radius: 0;
+    }
+
+    .tab-navigation-content div.row {
+        width: 100%;
+    }
+
+    .tab-navigation-content #dossier-table > tbody > tr > td:last-child {
+        position: relative;
+    }
+
+    .tab-navigation-content #dossier-table > tbody > tr > td:last-child span {
+        cursor: auto;
+    }
+
+    .tab-navigation-content #dossier-table > tbody > tr > td:last-child .trend {
+        display: inline-block;
+    }
+
+    .tab-navigation-content #dossier-table > tbody > tr > td:last-child .fa-trash {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        font-size: 1.8em;
+        color: #979797 !important;
+    }
+}

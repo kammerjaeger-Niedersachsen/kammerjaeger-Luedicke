@@ -1,0 +1,94 @@
+/* similarberufe.css */
+
+.similarberufe-link {
+    margin-top: 10px;
+    display: block;
+}
+
+.similarberufe-link .fa {
+    margin-right: 5px;
+}
+
+.similarberufe {
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+h2.similarberufe {
+    font-size: 14px;
+}
+
+.similarberufe-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 170px;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: relative;
+    border: #DDDDDD 1px solid;
+    transition: all 0.3s ease 0s;
+}
+
+.similarberufe-item:hover .similarberufe-item-title {
+    background: rgba(255, 255, 255, 1);
+}
+
+.similarberufe-item-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333333;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.25em;
+    word-wrap: break-word;
+}
+
+.similarberufe-item-lexikon {
+    background: #C14C1A none repeat scroll 0 0;
+    border-radius: 0 0 0 2px;
+    color: #ffffff;
+    font-size: 0.75em;
+    font-weight: 400;
+    padding: 2px 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.similarberufe-item-lexikon.schule,
+.similarberufe-item.bg-schule {
+    background-size: contain;
+    background: #004A99 center center;
+}
+
+.similarberufe-item-lexikon.uni,
+.similarberufe-item.bg-uni {
+    background-size: contain;
+    background: #A80014 center center;
+}
+
+.similarberufe-item-lexikon.lehre,
+.similarberufe-item.bg-lehre {
+    background-size: contain;
+    background: #C14C1A center center;
+}
+
+.similarberufe-item-lexikon.sonstige1 ,
+.similarberufe-item.bg-sonstige1,
+.similarberufe-item-lexikon.sonstige2 ,
+.similarberufe-item.bg-sonstige2 {
+    background-size: contain;
+    background: #275A37 center center;
+}

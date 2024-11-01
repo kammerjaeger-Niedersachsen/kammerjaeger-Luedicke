@@ -1,0 +1,321 @@
+.nav-link {
+    color:white ! important;
+}
+
+.navbar-custom {
+    background-color: #F5C600;
+    border: none;
+    border-bottom-color: #e7e7e7;
+}
+
+.navbar-custom .navbar-brand .brand-text,
+.navbar-custom .navbar-text {
+    color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-custom .brand-logo {
+    width: 60px;
+}
+
+.navbar-custom .navbar-brand img {
+    display: inline-block;
+    height: 20px;
+    -webkit-filter: drop-shadow( 4px 2px 3px rgba(0, 0, 0, .3));
+    filter: drop-shadow( 4px 2px 3px rgba(0, 0, 0, .3));
+}
+
+.navbar-custom .navbar-brand .brand-text {
+    font-size: .8em;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav-brand-separator {
+    width: 1px;
+    background-color: #fff;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #3c3c3c;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #3c3c3c;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #3c3c3c;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+    padding: 10px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #F5C600;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #3c3c3c;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    background-color: #F5C600;
+    color: #000;
+}
+
+.dropdown-menu {
+    background-color: #F5C600;
+    border: none;
+    border-radius: 0;
+}
+
+.btn{
+    border-radius: 0
+}
+
+.navbar-form {
+    padding: 0;
+    margin: 0 -15px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+    border-bottom: 1px solid #F0F0F0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.input-group {
+    border-radius: 0;
+}
+
+.btn-search-nav {
+    color: #ffffff;
+    background-color: #004A9F;
+}
+
+.btn-search-nav:hover,
+.btn-search-nav:focus,
+.btn-search-nav:active {
+    background-color: #1272e2;
+}
+
+.navbar-nav .open .dropdown-menu > li > a {
+    line-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nav-brand-separator {
+        margin-right: 12px;
+    }
+
+    .navbar-custom .navbar-brand .brand-text {
+        font-size: .65em;
+        font-weight: 600;
+    }
+
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        font-size: .8em;
+        padding: 15px 5px;
+    }
+
+    .navbar-custom .brand-logo {
+        width: 100px;
+    }
+
+    .navbar-custom .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar-form {
+        margin-left: 1em;
+        padding-top: 5px;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border: none;
+    }
+
+    .navbar-form .form-control {
+        width: 9em;
+    }
+
+    .nav > li > a {
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (min-width: 829px) {
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        font-size: .85em;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-custom .navbar-brand .brand-text {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        font-size: 1.15em;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        padding: 5px 20px;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border: none;
+    }
+
+    .navbar-form .form-control {
+        width: 12em;
+        margin-right: 5px;
+    }
+}
+
+/* navbar-toggle animation - START */
+.navbar-toggle {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggle:hover {
+    background: transparent !important;
+}
+
+.navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+}
+
+.navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* navbar-toggle animation - END */
+
+/* sticky-wrapper - START */
+.sticky-wrapper {
+    display: block !important;
+    height: 0 !important;
+}
+
+.sticky-wrapper .start #navigation {
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.sticky-wrapper.is-sticky .start {
+    top: 0 !important;
+}
+
+.sticky-wrapper.is-sticky .start #navigation {
+    opacity: 1;
+}
+
+#navigation .sticky-wrapper {
+    opacity: 0;
+}
+
+#navigation .sticky-wrapper.is-sticky {
+    opacity: 1;
+}
+
+#navigation .sticky-wrapper .navbar {
+    display: none;
+}
+
+#navigation .sticky-wrapper.is-sticky .navbar {
+    display: block;
+}
+/* sticky-wrapper - END */
+
+/* Ripple effect - START */
+.ripple {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+/* Ripple effect - END */

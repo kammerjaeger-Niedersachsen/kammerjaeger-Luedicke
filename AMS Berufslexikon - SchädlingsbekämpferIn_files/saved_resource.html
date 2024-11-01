@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://www.karrierekompass.at/iframewidgetside/ -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>AMS Karrierekompass - Startseite</title>
+        	        <link rel="preconnect" href="https://cdn.braintrust.at/" crossorigin="">
+        <link href="./jquery-ui(1).min.css" rel="stylesheet">
+        <link href="./bootstrap.min.css" rel="stylesheet">
+        <link href="./font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./Open Sans.css">
+        <link rel="stylesheet" href="./bootstrap-select.min.css">
+        <link rel="preconnect" href="https://pstats11.braintrust.at/" crossorigin="">
+        <link href="./base(1).min.css" rel="stylesheet">
+        <link href="./side-widget(1).css" rel="stylesheet">
+        <link href="./side-admin-widget.css" rel="stylesheet">
+        <link href="./nav-from-kk(1).css" rel="stylesheet">
+        <link href="./autocomplete(1).css" rel="stylesheet">
+        <link rel="stylesheet" href="./breadcrumbs(1).css">
+    
+        
+            
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Im AMS- Karrierekompass finden Sie Berufsinformationen, Angebote zu Aus- und Weiterbildungen sowie Infos zu Einstiegsgehältern und vieles mehr.">
+<meta name="keywords" content="Karriere, Arbeitsmarkt, Trends, Zukunft, Berufsinformation, Arbeitsplatz, AMS; Arbeitsmarktservice, Jobs, Stellensuche, arbeitslos, Lehre, Lehrberufe, Geld, Gehalt, Ausbildung, Institute, Weiterbildung, Lehrbetriebe, Orientierung, Bildungsinformation, Qualifikation">
+<meta property="og:title" content="AMS Karrierekompass">
+<meta property="og:url" content="https://www.karrierekompass.at">
+<meta property="og:image" content="https://www.karrierekompass.at/img/social/Karrierekompass_Social.png">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Im AMS- Karrierekompass finden Sie Berufsinformationen, Angebote zu Aus- und Weiterbildungen sowie Infos zu Einstiegsgehältern und vieles mehr.">
+<meta property="og:site_name" content="AMS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.karrierekompass.at/img/social/Karrierekompass_Social.png">
+<meta name="twitter:title" content="AMS Karrierekompass">
+<meta name="twitter:description" content="Im AMS- Karrierekompass finden Sie Berufsinformationen, Angebote zu Aus- und Weiterbildungen sowie Infos zu Einstiegsgehältern und vieles mehr.">            <link rel="apple-touch-icon" sizes="180x180" href="https://www.karrierekompass.at/img/icons/apple-touch-icon.png?v1.1.16">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.karrierekompass.at/img/icons/favicon-32x32.png?v1.1.16">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.karrierekompass.at/img/icons/favicon-16x16.png?v1.1.16">
+<link rel="manifest" href="https://www.karrierekompass.at/img/icons/site.webmanifest?v1.1.16">
+<link rel="mask-icon" href="https://www.karrierekompass.at/img/icons/safari-pinned-tab.svg?v1.1.16" color="#2056ae">
+<link rel="shortcut icon" href="https://www.karrierekompass.at/img/icons/favicon.ico?v1.1.16">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/img/icons/browserconfig.xml?v1.1.16">
+<meta name="theme-color" content="#ffffff">
+
+                <script type="text/javascript" defer="" async="" src="./piwik.js.téléchargé"></script><script src="./jquery-3.6.0.min.js.téléchargé" type="text/javascript"></script>
+        <script src="./jquery-ui.min(1).js.téléchargé" type="text/javascript"></script>
+        <script src="./bootstrap.min.js.téléchargé" type="text/javascript"></script>
+        <script src="./html5shiv.min.js.téléchargé" type="text/javascript"></script>
+        <script src="./respond-1.4.2.min.js.téléchargé" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="./dataTables.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./responsive.dataTables.min.css">
+        <script type="text/javascript" src="./jquery.dataTables.min.js.téléchargé"></script>
+        <script type="text/javascript" src="./dataTables.bootstrap.min.js.téléchargé"></script>
+        <script type="text/javascript" src="./dataTables.responsive.min.js.téléchargé"></script>
+        <script type="text/javascript" src="./jquery.mark.js.téléchargé"></script>
+        <script type="text/javascript" src="./bootstrap-select.min.js.téléchargé"></script>
+        <script src="./widget_float.min.js.téléchargé" defer="defer"></script>                 <script type="text/javascript" src="./jquery.lazy.min(1).js.téléchargé"></script>         <script type="text/javascript" src="./side-widget(1).js.téléchargé"></script>
+        <script type="text/javascript" src="./autocomplete(1).js.téléchargé"></script>
+        
+                <script src="./router(1).js.téléchargé"></script>
+        <script src="./routing(1)"></script>
+        <script src="./search.min.js.téléchargé" type="text/javascript"></script>         <script type="text/javascript">$(function(){ initSearch(true); });</script>
+        
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $(".links-block .block-content").on("shown.bs.collapse", function () {
+                var selected = $(this);
+				                $("html, body").animate({scrollTop: selected.offset().top - 170}, 600);
+				            });
+
+            animateSteps();
+
+            function animateSteps() {
+                setTimeout(function () {
+                    $('.lehre-spezial .step1').removeClass('active');
+                    $('.lehre-spezial .step2').addClass('active');
+                    setTimeout(function () {
+                        $('.lehre-spezial .step2').removeClass('active');
+                        $('.lehre-spezial .step3').addClass('active');
+                        setTimeout(function () {
+                            $('.lehre-spezial .step3').removeClass('active');
+                            $('.lehre-spezial .step1').addClass('active');
+                            animateSteps();
+                        }, 2000);
+                    }, 2000);
+                }, 2000);
+            }
+
+            setTimeout(function () {
+                $('[data-popovertoogle="popover"]').removeAttr('title');
+            }, 0);
+        });
+	</script>
+    <link rel="stylesheet" type="text/css" href="./jquery-ui(1).min.css"></head>
+    <body class="iframe iframewidget iframewidgetside">
+
+        
+        
+
+                <header id="header" style="display: none;" role="banner">
+            <div class="container">
+                <div class="row header">
+                    <div class="col-xs-12 logo">
+                                                                                    <a href="https://www.karrierekompass.at/" target="_blank"><img src="./kk_header_widget.png" alt="AMS Karrierekompass"></a>
+                                <div class="widget_header_text">Hier finden Sie Infos zu Berufen, Einstiegsgehältern und Arbeitsmarkt­trends sowie Aus- und Weiterbildungs­angebote und vieles mehr.</div>
+                                                                        </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="content">
+            <div class="container">
+                                                                        
+                                
+                
+                                
+                                                                                    </div>
+        </section>
+
+        
+        
+        
+        <script type="text/javascript">
+    $(document).ready(function() {
+
+        // Add notransition - without animation
+        $(".search-box .input-wrapper-search, .search-box .input-wrapper-search #q_global, .search-box .input-group-btn, .search-box .input-group-btn .btn, .search-box .input-group-btn .btn img").addClass('notransition');
+
+        var table_global_search = $('#list-table-search-global').DataTable({
+            "mark": {
+                className: "highlight-search-result-description"
+            },
+            "pageLength": 10,
+            "processing": true,
+            "serverSide": true,
+            "deferLoading": 0,
+            "stateSave": false,
+            "order": [[2, 'asc']],
+            "ajax": {
+                "url": Routing.generate('searchJsonGlobal', {
+                    json: true
+                }),
+                "data": function(d) {
+                    d.q = $('#q_global').val();
+                    d.category = $('#search-tab-value').val();
+                }
+            },
+            "sDom": '<"he"ri<"clear">>t<"fo"lp<"clear">>',
+            "columns": [
+                { "data": "id", "visible": false },
+                { "data": "url", "visible": false },
+                { "data": "title", "responsivePriority": 1 },
+                { "data": "description", "visible": false },
+                { "data": "category", "visible": false },
+                { "data": "thumbnail", "visible": false }
+            ],
+            "columnDefs": [
+                {
+                    "targets": 2,
+                    "render": function(data, type, row) {
+                        var title = row['title'];
+                        var url = row['url'];
+                        var description = row['description'];
+                        var category = row['category'];
+                        var thumbnail = row['thumbnail'];
+
+                        return '<a href="'+url+'" target="_blank" class="global-search-result-block'+(category == 'broschuere'?' pdf-result-block':'')+'">' +
+                            (category == 'broschuere'?'<div class="global-search-result-flex-box"><div class="global-search-result-thumbnail-div thumbnail-pdf"><span class="fa fa-file-pdf-o" aria-hidden="true"></span></div></div><div class="global-search-result-div">':'') +
+                            '<span class="global-search-result-title">'+title+'</span>' +
+                            (category == 'video' || (category == 'beruf' && thumbnail != '')?'<div class="global-search-result-flex-box"><div class="global-search-result-thumbnail-div'+(category == 'broschuere'?' thumbnail-pdf':'')+'" '+(category != 'broschuere'?'style="background-image: url(\''+thumbnail+'\');"':'')+'>'+(category == 'video'?'<span class="fa fa-play-circle" aria-hidden="true"></span>':(category == 'broschuere'?'<span class="fa fa-file-pdf-o" aria-hidden="true"></span>':''))+'</div><div class="global-search-result-div">':'') +
+                            '<span class="global-search-result-url">'+url+'</span>' +
+                            '<span class="global-search-result-description">'+description+'</span>' +
+                            (category == 'video' || (category == 'beruf' && thumbnail != '')?'</div></div>':'') +
+                            (category == 'broschuere'?'</div>':'') +
+                            '</a>';
+                    }
+                },
+            ],
+            "responsive": true,
+            "language": {
+                "zeroRecords": "Ihre Suche ergab leider keine Ergebnisse. Bitte versuchen Sie es mit einem anderen Begriff erneut.",
+                "lengthMenu": "Zeige _MENU_ Ergebnisse",
+                "infoEmpty":  "Keine Ergebnisse",
+                "infoFiltered": "",
+                "info": "Zeige _START_ bis _END_ von _TOTAL_ Ergebnissen<br /><span>Darstellung der Ergebnisse nach Relevanz</span>",
+                "emptyTable": "Ihre Suche ergab leider keine Ergebnisse. Bitte versuchen Sie es mit einem anderen Begriff erneut.",
+                "processing": "",
+                "thousands": ".",
+                "paginate": {
+                    first:    'Erste Seite',
+                    previous: 'Zurück',
+                    next:     'Vor',
+                    last:     'Letzte Seite'
+                }
+            },
+            "initComplete": function( settings, json ) {
+                $('#list-table-search-global_wrapper').hide();
+            },
+            "fnPreDrawCallback": function(data) {
+                $('.overlay-search-processing').show();
+            },
+            "fnDrawCallback": function(data) {
+                $('#info-similarterm').remove();
+                if (data.json) {
+                    if (data.json.similarterm.trim() != '') {
+                        $('#list-table-search-global_wrapper').prepend('<span id="info-similarterm">Ergebnisse für <span class="info-similarterm-span">' + data.json.similarterm.trim() + '</span>:</span>');
+                        $(".global-search-result-description").mark(data.json.similarterm.trim(), {className: 'highlight-search-result-description'});
+                    } else {
+                        $(".global-search-result-description").mark(data.oAjaxData.q, {className: 'highlight-search-result-description'});
+                    }
+                }
+
+                if(typeof data.json !== 'undefined') {
+                    $('#overlay-search .search-platforms-info').hide();
+                    $('#overlay-search .search-platforms').show();
+                } else {
+                    $('#overlay-search .search-platforms').hide();
+                    $('#overlay-search .search-platforms-info').show();
+                }
+
+                $('.overlay-search-processing').hide();
+                $('#list-table-search-global_wrapper').show();
+                $('.search-tabs a').removeClass('active');
+                $('.search-tab-'+$('#search-tab-value').val()).addClass('active');
+                //$('#search-dropdown-value').selectpicker('val', $('#search-tab-value').val());
+ // Auskommentiert, da das Scrollen auf Berufseiten nicht mehr ordnungsgem�� funktioniert
+
+                $(".iframewidgetside #list-table-search-global a").click(function () {
+                    _paq.push(['trackEvent', 'Iframewidgetside', 'Click Link In Search Results']);
+                });
+            }
+        });
+
+        function jobInputTextAdoption() {
+            var jobInputField = $('input#q').val();
+            if (jobInputField != null && jobInputField.trim() !== '') {
+                $('#q_global').val(jobInputField);
+            }
+        }
+
+        $('#q_global').on('keypress', function (e) {
+            _paq.push(['trackEvent', 'Volltextsuche', 'Search (Enter)']);
+            if(e.which === 13){
+                $('#search-tab-value').val('alle');
+                doSearch();
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Search (Enter)']);
+                                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                            }
+        });
+
+        $('.search-box button').on('click', function() {
+            _paq.push(['trackEvent', 'Volltextsuche', 'Search (Button)']);
+            _paq.push(['trackEvent', 'Iframewidgetside', 'Search (Button)']);
+            $('#search-tab-value').val('alle');
+            $('.search-tabs a').removeClass('active');
+            $('.search-tab-alle').addClass('active');
+            doSearch();
+                            $("html, body").animate({ scrollTop: 0 }, "slow");
+                    });
+
+        $('.search-tabs a').on('keypress click', function(e) {
+            if (e.which === 13 || e.type === 'click') {
+                var category = $(this).attr('data-category');
+                $('.search-tabs a').removeClass('active');
+                $(this).addClass('active');
+                $('#search-tab-value').val(category);
+                $('#search-dropdown-value').selectpicker('val', category);
+                _paq.push(['trackEvent', 'Volltextsuche', 'Tab Change - ' + category]);
+                doSearch();
+            }
+        });
+        $('#search-dropdown-value').on('change', function() {
+            var category = $(this).val();
+            $('.search-tabs a').removeClass('active');
+            $('.search-tab-'+category).addClass('active');
+            $('#search-tab-value').val(category);
+            _paq.push(['trackEvent', 'Volltextsuche', 'Tab Change - '+category]);
+            _paq.push(['trackEvent', 'Iframewidgetside', 'Dropdown Select - '+category]);
+            doSearch();
+        });
+
+        $(".close-overlay-search, .overlay-search a").on('keypress click', function(e) {
+            if (e.which === 13 || e.type === 'click') {
+                jobInputTextAdoption();
+                $("#overlay-search").toggle();
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 300);
+                if ($(this).attr('class') == 'open-overlay-search') {
+                    $('#q_global').focus();
+                }
+            }
+        });
+
+        function doSearch() {
+            var globalInputField = $('#q_global').val();
+            if (globalInputField == null || globalInputField.trim() === '' || globalInputField.trim().length < 3) {
+                $('#q_global').focus();
+                $('.overlay-search-hint').fadeIn();
+                setTimeout(function() {
+                    $('.overlay-search-hint').fadeOut();
+                }, 5000);
+            } else {
+                $(".iframewidget .select-ergebnisse, .iframewidget .search-results-row .search-results, .iframewidget .widget-search-reset").css("display", "block");
+                table_global_search.draw();
+                $(".iframewidget .select-ergebnisse, .iframewidget .widget-search-reset").css("display", "block");
+            }
+        }
+
+        $(".widget-search-reset a").click(function (event) {
+            event.preventDefault();
+
+            $(".iframewidget .select-ergebnisse, .iframewidget .search-results-row .search-results, .iframewidget .widget-search-reset").fadeOut();
+            $(".iframewidget .select-ergebnisse").removeClass("visible-xs");
+            $(".iframewidget .widget-kk-info").css("margin-top", "10px");
+            $("#q_global").val("").focus();
+        });
+
+        // Piwik events tracking - START
+        $(".iframewidgetside .widget-search-reset a").click(function () {
+            _paq.push(['trackEvent', 'Iframewidgetside', 'Click Suchergebnisse löschen']);
+        });
+
+        $(".iframewidgetside .widget-kk-info a").click(function () {
+            _paq.push(['trackEvent', 'Iframewidgetside', 'Click Button Karrierekompass']);
+        });
+
+        $(".iframewidgetside .webseiten-link-row .berufsorientierung").click(function () {
+            if ($(".iframewidgetside #berufsorientierung").hasClass("in")) {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Close Berufsorientierung']);
+            } else {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Open Berufsorientierung']);
+            }
+        });
+
+        $(".iframewidgetside .webseiten-link-row .berufsinformation").click(function () {
+            if ($(".iframewidgetside #berufsinformation").hasClass("in")) {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Close Berufsinformation']);
+            } else {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Open Berufsinformation']);
+            }
+        });
+
+        $(".iframewidgetside .webseiten-link-row .ausundweiterbildung").click(function () {
+            if ($(".iframewidgetside #ausundweiterbildung").hasClass("in")) {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Close Aus und Weiterbildung']);
+            } else {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Open Aus und Weiterbildung']);
+            }
+        });
+
+        $(".iframewidgetside .webseiten-link-row .bewerbung").click(function () {
+            if ($(".iframewidgetside #bewerbungjobsuche").hasClass("in")) {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Close Bewerbung']);
+            } else {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Open Bewerbung']);
+            }
+        });
+
+        $(".iframewidgetside .webseiten-link-row .arbeitsmarktdaten").click(function () {
+            if ($(".iframewidgetside #arbeitsmarktdaten").hasClass("in")) {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Close AMS-Daten & Forschung']);
+            } else {
+                _paq.push(['trackEvent', 'Iframewidgetside', 'Open AMS-Daten & Forschung']);
+            }
+        });
+
+        $(".iframewidgetside .datenschutz a").click(function () {
+            _paq.push(['trackEvent', 'Iframewidgetside', 'Click Link Datenschutzerklärung']);
+        });
+        // Piwik events tracking - END
+
+                
+                $('#q_global').focus(function(e) {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+        
+
+
+
+    });
+</script>
+
+<div id="overlay-search" style="display: block;">
+    <div class="container">
+                
+        <div class="row search-box-row">
+            <div class="col-xs-12 search-box">
+                <div class="row content-search-box-row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <p class="visible-sm visible-md visible-lg hidden-xs">Hier werden zahlreiche AMS-Webseiten für Aus- und Weiterbildungsinformationen nach Ihrer Suchanfrage durchsucht</p>
+                                                    <p class="hidden-sm hidden-md hidden-lg visible-xs">Zahlreiche AMS-Webseiten werden nach Ihrer Suchanfrage durchsucht.</p>
+                                                <div class="input-group">
+                            <label for="q_global" class="sr-only" id="label-q_global">Suchbegriff</label>
+                            <div class="input-wrapper-search notransition">
+                                <input name="q_global" id="q_global" placeholder="Ihr Suchbegriff" class="form-control notransition" value="" autocomplete="off" type="text">
+                                <span class="fa fa-spinner fa-spin" aria-hidden="true"></span>
+                            </div>
+                            <span class="input-group-btn notransition">
+                                <button type="submit" class="btn btn-primary notransition" title="Suchen" aria-label="Suchen"><img src="./search_icon.svg" alt="Search Icon" style="width: 24px; filter: invert(100%) sepia(18%) saturate(18%) hue-rotate(85deg) brightness(107%) contrast(100%);" class="notransition"></button>
+                            </span>
+                        </div>
+                        <div class="overlay-search-hint">Bitte geben Sie mindestens drei Zeichen ein, um Ihre Suchanfrage abschicken zu können.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="row head-box-small-row" style="display: none;">
+            <a href="https://www.karrierekompass.at/iframewidgetside/#widgetTop">
+                <i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 search-tabs">
+                <input type="hidden" value="alle" name="search-tab-value" id="search-tab-value">
+                <ul class="hidden-xs visible-sm visible-md visible-lg">
+                    <li><a role="button" class="search-tab-alle active" data-category="alle" tabindex="0"><span>Alle Ergebnisse</span><span class="span-hover">Alle Ergebnisse</span></a></li>
+                    <li><a role="button" class="search-tab-berufe" data-category="berufe" tabindex="0"><span>Berufe</span><span class="span-hover">Berufe</span></a></li>
+                    <li><a role="button" class="search-tab-ausbildungen" data-category="ausbildungen" tabindex="0"><span>Ausbildungen</span><span class="span-hover">Ausbildungen</span></a></li>
+                    <li><a role="button" class="search-tab-weiterbildungen" data-category="weiterbildungen" tabindex="0"><span>Weiterbildungen</span><span class="span-hover">Weiterbildungen</span></a></li>
+                    <li><a role="button" class="search-tab-institute" data-category="institute" tabindex="0"><span>Bildungsinstitute</span><span class="span-hover">Bildungsinstitute</span></a></li>
+                    <li><a role="button" class="search-tab-videos" data-category="videos" tabindex="0"><span>Videos</span><span class="span-hover">Videos</span></a></li>
+                                        <li><a role="button" class="search-tab-allgemein" data-category="allgemein" tabindex="0"><span>Allgemeine Bildungsinformationen</span><span class="span-hover">Allgemeine Bildungsinformationen</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+                <div class="row text-right widget-search-reset" style="display: none;">
+            <div class="col-xs-12">
+                <a href="https://www.karrierekompass.at/iframewidgetside/#">Suchergebnisse löschen</a>
+            </div>
+        </div>
+        
+        <div class="row  hidden-sm hidden-md hidden-lg select-ergebnisse" style="display: none;">
+            <div class="col-xs-12 search-tabs">
+                <label for="search-dropdown-value" class="sr-only" id="label-search-dropdown-value">Alle Ergebnisse</label>
+                <div class="dropdown bootstrap-select bs3"><select id="search-dropdown-value" class="selectpicker" aria-labelledby="label-search-dropdown-value" data-none-selected-text="Ergebnisse filtern" title="Ergebnisse filtern"><option class="bs-title-option" value=""></option>
+                    <option value="alle">Alle Ergebnisse</option>
+                    <option value="berufe">Berufe</option>
+                    <option value="ausbildungen">Ausbildungen</option>
+                    <option value="weiterbildungen">Weiterbildungen</option>
+                    <option value="institute">Bildungsinstitute</option>
+                    <option value="videos">Videos</option>
+                                        <option value="allgemein">Allgemeine Bildungsinformationen</option>
+                </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-default bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="search-dropdown-value" title="Ergebnisse filtern"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Ergebnisse filtern</div></div> </div><span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open"><div class="inner open" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner " role="presentation"></ul></div></div></div>
+            </div>
+        </div>
+
+        <div class="row search-results-row">
+            <div class="col-xs-12 search-results">
+                <div class="overlay-search-processing" style="display: none;">Lade ... <span class="fa fa-spinner fa-spin"></span></div>
+                <div id="list-table-search-global_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer" style="display: none;"><div class="he"><div id="list-table-search-global_processing" class="dataTables_processing panel panel-default" style="display: none;"><div><div></div><div></div><div></div><div></div></div></div><div class="dataTables_info" id="list-table-search-global_info" role="status" aria-live="polite">Keine Ergebnisse</div><div class="clear"></div></div><table id="list-table-search-global" class="dataTable no-footer dtr-inline" aria-describedby="list-table-search-global_info" style="width: 26px;">
+                    <caption class="sr-only">Ergebnisse Tabelle</caption>
+                    <thead>
+                        <tr><th scope="col" class="sorting sorting_asc" tabindex="0" aria-controls="list-table-search-global" rowspan="1" colspan="1" style="width: 0px;" aria-sort="ascending" aria-label="Titel: activate to sort column descending">Titel</th></tr>
+                    </thead><tbody><tr class="odd"><td valign="top" colspan="1" class="dataTables_empty">Ihre Suche ergab leider keine Ergebnisse. Bitte versuchen Sie es mit einem anderen Begriff erneut.</td></tr></tbody>
+                </table><div class="fo"><div class="dataTables_length" id="list-table-search-global_length"><label>Zeige <select name="list-table-search-global_length" aria-controls="list-table-search-global" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> Ergebnisse</label></div><div class="dataTables_paginate paging_simple_numbers" id="list-table-search-global_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="list-table-search-global_previous"><a href="https://www.karrierekompass.at/iframewidgetside/#" aria-controls="list-table-search-global" data-dt-idx="0" tabindex="0">Zurück</a></li><li class="paginate_button next disabled" id="list-table-search-global_next"><a href="https://www.karrierekompass.at/iframewidgetside/#" aria-controls="list-table-search-global" data-dt-idx="1" tabindex="0">Vor</a></li></ul></div><div class="clear"></div></div></div>
+            </div>
+        </div>
+
+                    <div class="row widget-kk-info">
+                <div class="col col-xs-1 col-kk-img">
+                    <a href="https://www.karrierekompass.at/" target="_blank"><img src="./KK-Kompass.png" alt="Karrierekompass Icon"></a>
+                </div>
+                <div class="col col-xs-10 col-kk-text">
+                    <h2><a href="https://www.karrierekompass.at/" target="_blank">KARRIEREKOMPASS</a></h2>
+                    <p>AMS-Portal für Ausbildung, Beruf &amp; Karriere</p>
+                </div>
+                <div class="col col-xs-1 col-kk-icon">
+                    <a href="https://www.karrierekompass.at/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <script>
+                // hide .widget-kk-info on kk website
+                try {
+                    if(parent.location.host !== null){
+                        $('.widget-kk-info').hide();
+                    }
+                } catch (error) {
+                    console.log('Different domains');
+                }
+            </script>
+        
+                        	<div class="row webseiten-link-row">
+		<div class="col-xs-12 col-sm-8 col-sm-offset-2 links-block">
+			<h2>Hier finden Sie Webseiten zu den Themen:</h2>
+			<div class="col-xs-10 col-xs-offset-2 links-elm berufsorientierung">
+				<a class="collapsed" role="button" data-toggle="collapse" href="https://www.karrierekompass.at/iframewidgetside/#berufsorientierung" aria-expanded="false" aria-controls="berufsorientierung" data-content="Bewerbung/Jobsuche (Grafik © iStock.com/Delpixart)" data-popovertoogle="popover" data-trigger="focus hover" data-placement="top" data-animation="false">Berufsorientierung</a>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 collapse block-content" id="berufsorientierung">
+				<ul>
+					<li>
+						<a href="http://www.ams.at/arbeitsuchende/aus-und-weiterbildung/berufsinformationen/berufsinformation/berufsinfomat" target="_blank">
+							<span class="link-title">Berufsinfomat</span>
+							<span class="link-description">Das KI-Tool für Berufe, Aus- und Weiterbildung</span><br>
+							<span class="link-description">Hier interagieren Sie nicht mit einem echten Menschen. Bitte beachten Sie, dass auch Maschinen Fehler machen können und unerwartete oder fehlerhafte Antworten möglich sind.</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.berufskompass.at/" target="_blank">
+							<span class="link-title">Berufskompass</span>
+							<span class="link-description">Welcher Beruf ist der richtige?</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.biz-buchung.at/" target="_blank">
+							<span class="link-title">Veranstaltungen in den BerufsInfoZentren des AMS</span>
+							<span class="link-description">Im BIZ-Buchungssystem können sich EinzelkundInnen und Lehrkräfte über alle Veranstaltungen der BIZ des AMS in ganz Österreich informieren und dazu anmelden</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.karrierekompass.at/deine_interessen" target="_blank">
+							<span class="link-title">Deine Interessen. Deine Lehre.</span>
+							<span class="link-description">Suchst Du nach der passenden Lehre? Finde in 3 Schritten deinen Lehrberuf!</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 links-elm berufsinformation">
+				<a class="collapsed" role="button" data-toggle="collapse" href="https://www.karrierekompass.at/iframewidgetside/#berufsinformation" aria-expanded="false" aria-controls="berufsinformation" data-content="Bewerbung/Jobsuche (Grafik © iStock.com/MachineHeadz)" data-popovertoogle="popover" data-trigger="focus hover" data-placement="top" data-animation="false">Berufsinformation</a>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 collapse block-content" id="berufsinformation">
+				<ul>
+					<li>
+						<a href="http://www.berufslexikon.at/" target="_blank">
+							<span class="link-title">Berufslexikon</span>
+							<span class="link-description">1.800 Berufe auf einen Blick</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.gehaltskompass.at/" target="_blank">
+							<span class="link-title">Gehaltskompass</span>
+							<span class="link-description">Durchschnittliche Einstiegsgehälter im Überblick</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.fit-gehaltsrechner.at/" target="_blank">
+							<span class="link-title">FIT Gehaltsrechner</span>
+							<span class="link-description">"Frauenberufe" und technische Berufe im Vergleich</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.karrierevideos.at/" target="_blank">
+							<span class="link-title">Karrierevideos</span>
+							<span class="link-description">Berufe und Arbeitswelt im Bild</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.karrierefotos.at/" target="_blank">
+							<span class="link-title">Karrierefotos</span>
+							<span class="link-description">Hunderte berufs- bzw. ausbildungstypische Fotos stehen zum kostenlosen Download für Sie bereit</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.berufs-infos.at/" target="_blank">
+							<span class="link-title">Berufs-Info-Broschüren</span>
+							<span class="link-description">Formulare, Broschüren und weiteres Informationsmaterial zum Downloaden</span>
+						</a>
+					</li>
+                    <li>
+                        <a href="http://www.ams.at/bis/" target="_blank">
+                            <span class="link-title">Berufsinformationssystem</span>
+                            <span class="link-description">Österreichs größte Online-Datenbank für Berufe und Kompetenzen</span>
+                        </a>
+                    </li>
+				</ul>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 links-elm ausundweiterbildung">
+				<a class="collapsed" role="button" data-toggle="collapse" href="https://www.karrierekompass.at/iframewidgetside/#ausundweiterbildung" aria-expanded="false" aria-controls="ausundweiterbildung" data-content="Bewerbung/Jobsuche (Grafik © iStock.com/nd3000)" data-popovertoogle="popover" data-trigger="focus hover" data-placement="top" data-animation="false">Aus- und Weiterbildung</a>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 collapse block-content" id="ausundweiterbildung">
+				<ul>
+					<li>
+						<a href="http://www.ausbildungskompass.at/" target="_blank">
+							<span class="link-title">Ausbildungskompass</span>
+							<span class="link-description">Bildungsmöglichkeiten und Ausbildungseinrichtungen in Österreich</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.weiterbildungsdatenbank.at/" target="_blank">
+							<span class="link-title">Weiterbildungsdatenbank alle Kurse</span>
+							<span class="link-description">Über 70.000 Weiterbildungsangebote</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://wbdb.ams.or.at/wbdb/index_wbdb.jsp?ams=J" target="_blank">
+							<span class="link-title">Weiterbildungsdatenbank geförderte Kurse</span>
+							<span class="link-description">Alle Kurse, deren Durchführung vom AMS beauftragt wurde</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://erwachsenenbildung.at/bildungsinfo/kursfoerderung/" target="_blank">
+							<span class="link-title">Erwachsenenbildung.at</span>
+							<span class="link-description">Infos zur Förderung von Aus- und Weiterbildung</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.goethe.de/de/spr/ueb/led.html" target="_blank">
+							<span class="link-title">Lern Deutsch</span>
+							<span class="link-description">Das interaktive Spiel zum Spracherwerb - auch als Android- und iOS-Gratis-App</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-xs-10 col-xs-offset-2 links-elm bewerbung">
+				<a class="collapsed" role="button" data-toggle="collapse" href="https://www.karrierekompass.at/iframewidgetside/#bewerbungjobsuche" aria-expanded="false" aria-controls="bewerbungjobsuche" data-content="Bewerbung/Jobsuche (Grafik © iStock.com/grimaldello)" data-popovertoogle="popover" data-trigger="focus hover" data-placement="top" data-animation="false">Bewerbung/Jobsuche</a>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 collapse block-content" id="bewerbungjobsuche">
+				<ul>
+					<li>
+						<a href="https://jobs.ams.at/public/emps/" target="_blank">
+							<span class="link-title">Alle Jobs</span>
+							<span class="link-description">Die umfangreiche Jobdatenbank mit AMS-Stellenangeboten und Stellenangeboten aus dem Internet</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://jobroom.ams.or.at/jobroom/login_as.jsp" target="_blank">
+							<span class="link-title">e-Job-Room</span>
+							<span class="link-description">Österreichs größte Jobbörse</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.ams.at/arbeitsuchende/arbeitslos-was-tun/lehrstellenboerse" target="_blank">
+							<span class="link-title">Lehrstellenbörse</span>
+							<span class="link-description">Lehrstellen in ganz Österreich finden</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://bewerbungsportal.ams.or.at/bewerbungsportal/" target="_blank">
+							<span class="link-title">Bewerbungsportal</span>
+							<span class="link-description">Hier finden Sie alles, was Sie für den Bewerbungserfolg brauchen</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 links-elm arbeitsmarktdaten">
+				<a class="collapsed" role="button" data-toggle="collapse" href="https://www.karrierekompass.at/iframewidgetside/#arbeitsmarktdaten" aria-expanded="false" aria-controls="arbeitsmarktdaten" data-content="Bewerbung/Jobsuche (Grafik © iStock.com/deepblue4you)" data-popovertoogle="popover" data-trigger="focus hover" data-placement="top" data-animation="false">AMS-Daten &amp; Forschung</a>
+			</div>
+			<div class="col-xs-10 col-xs-offset-2 collapse block-content" id="arbeitsmarktdaten">
+				<ul>
+					<li>
+						<a href="http://www.ams.at/ueber-ams/medien/arbeitsmarktdaten" target="_blank">
+							<span class="link-title">Arbeitsmarktdaten</span>
+							<span class="link-description">Aktuelle Daten und Trends</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.arbeitsmarktprofile.at/" target="_blank">
+							<span class="link-title">Arbeitsmarktprofile</span>
+							<span class="link-description">Österreichweite Übersicht der Arbeitsmarktprofile mit zahlreichen Detailinformationen</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://forschungsnetzwerk.ams.at/" target="_blank">
+							<span class="link-title">Forschungsnetzwerk</span>
+							<span class="link-description">Einfacher Zugang zu neuen Forschungsergebnissen</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://jobbarometer.ams.at/" target="_blank">
+							<span class="link-title">JobBarometer (Trends)</span>
+							<span class="link-description">Wichtige Trends auf einen Blick</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+			<div class="row">
+	<div class="container">
+									<link rel="stylesheet" href="./flickity.min.css">
+				<link rel="stylesheet" href="./schwerpunkte-start-page.css">
+				
+												
+				<!-- Display schwerpunkt-carousel on Mobile Devices - START -->
+				<div class="hidden-sm hidden-md hidden-lg">
+					<!-- schwerpunkt-carousel - START -->
+					<div class="flickity-carousel schwerpunkt-carousel diffused-box-shadow flickity-enabled" tabindex="0">
+											<div class="flickity-viewport" style="height: 0px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px;"></div></div></div>
+					<div class="button-row">
+	<div class="button-group button-group--cells">
+			</div>
+</div>					<!-- schwerpunkt-carousel - START -->
+				</div>
+				<!-- Display schwerpunkt-carousel on Mobile Devices - END -->
+				
+				<!-- Display schwerpunkt-carousel on Tablet, Laptop and Desktop Devices - START -->
+				<div class="hidden-xs">
+					<!-- schwerpunkt-carousel - START -->
+					<div class="flickity-carousel schwerpunkt-carousel diffused-box-shadow flickity-enabled" tabindex="0">
+											<div class="flickity-viewport" style="height: 0px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px;"></div></div></div>
+				    <div class="button-row">
+	<div class="button-group button-group--cells">
+			</div>
+</div>					<!-- schwerpunkt-carousel - END -->
+				</div>
+				<!-- Display schwerpunkt-carousel on Tablet, Laptop and Desktop Devices - END -->
+						</div>
+</div>
+
+	<script src="./flickity.pkgd.min.js.téléchargé"></script>
+	
+	<script>
+        $(document).ready(function() {
+            var cellButtonsGroup = document.querySelectorAll('.button-group--cells');
+            var carousel = $('.schwerpunkt-carousel');
+            function make_dot_btn(btn){
+                btn.innerHTML='...';
+                btn.disabled=true;
+            }
+            function updateDotPagination(btn_value){
+                var numberOfSlides=document.querySelectorAll('.flickity-carousel-cell').length / 2;
+                // weil diese classen wirde doppelt soviel verwendet, deswegen durch 2, zB. für Desktop und für mobile
+                if(numberOfSlides > 7){
+                    for(let cellButtons of cellButtonsGroup){
+                        let paginate_buttons=cellButtons.querySelectorAll('.button');
+                        let btn_fist_dot= paginate_buttons[1];
+                        let btn_last_dot= paginate_buttons[5];
+                        if(btn_value >= 5 && btn_value < numberOfSlides - 3) {
+                            make_dot_btn(btn_fist_dot);
+                            make_dot_btn(btn_last_dot);
+                            for (let i = 2; i < 5; i++) paginate_buttons[i].innerHTML = '' + (btn_value - 3 + i);
+                        }
+                        else if(btn_value <= 4){
+                            make_dot_btn(btn_last_dot);
+                            btn_fist_dot.disabled=false;
+                            for (let i= 0; i<= 4; i++) paginate_buttons[i].innerHTML ='' +  (1 + i);
+                        }
+                        else if(btn_value => numberOfSlides - 3){
+                            let btn_max=numberOfSlides;
+                            make_dot_btn(btn_fist_dot);
+                            btn_last_dot.disabled = false;
+                            for (let i = 6; i > 1; i--) paginate_buttons[i].innerHTML = '' + btn_max--;
+                        }
+                    }
+                }
+            }
+            function updateSelectedBtn(index){
+                for(let cellButtons of cellButtonsGroup){
+                    let paginate_buttons=cellButtons.querySelectorAll('.button');
+                    //make previousSelectedButton unselected
+                    cellButtons.querySelector('.is-selected').classList.remove('is-selected');
+                    for (const paginate_button of paginate_buttons)
+                    {   if(paginate_button.innerHTML==='...') continue;
+                        if(parseInt(paginate_button.innerHTML,10) - 1 === index){
+                            //newSelectedButton
+                            paginate_button.classList.add('is-selected');
+                            break;
+                        }
+                    }
+                }
+            }
+            carousel.flickity({
+                adaptiveHeight: true,
+                prevNextButtons: false,
+	            pageDots: false,
+                on: {
+                    select: function (index){
+                        updateDotPagination(index + 1);
+                        updateSelectedBtn(index);
+                    },
+	                change: function (index) {
+                        carousel.flickity('select',index);// damit beide flickity(mobile (xs) und desktop(md, lg)) auf selbe slide sind
+                    }
+                }
+            });
+            for(let cellButtons of cellButtonsGroup){
+            cellButtons.addEventListener( 'click', function( event ) {
+                if ( !matchesSelector( event.target, '.button' ) ) {
+                    return;
+                }
+                carousel.flickity('select', (parseInt(event.target.innerHTML,10)-1));
+            });
+            }
+            // WCAG adjustments
+            $('.flickity-carousel-cell').removeAttr('aria-hidden');
+        });
+	</script>
+	
+
+                <div class="row datenschutz">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 links-block"><a href="https://www.karrierekompass.at/datenschutz" target="_blank">Datenschutzerklärung</a></div>
+                </div>
+        
+                    </div>
+</div>
+        <!-- Modal selbst getriggert -->
+<div class="modal fade" id="feedbackModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-m" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Wir benötigen Ihre Hilfe!</h4>
+            </div>
+            <div class="modal-body">
+                <p> Mit Ihrem Feedback helfen Sie uns den AMS-Karrierekompass zu verbessern. Die Umfrage dauert nur wenige Minuten und ist völlig anonym!</p>
+            </div>
+            <div class="modal-footer ">
+                <a href="https://eventmaker.at/ams/umfrage_karrierekompass/index.html" target="_blank" rel="noopener" class="btn col-xs-12" style="color:black">Jetzt starten</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal end -->
+<!-- Modal Style-->
+<style>
+    #feedbackModal{
+        top:25vh;
+    }
+    #feedbackModal .modal-dialog{
+        width: 500px;
+    }
+    #feedbackModal .modal-content{
+        background: #6CC5D9;/*#ceff8d;/*#8292e4;*/
+        min-height: 400px;
+    }
+    #feedbackModal .modal-header{
+        border-bottom: 0;
+    }
+    #feedbackModal .modal-header h4 {
+        margin-top:80px;
+        text-align: center;
+        font-size:32px;
+    }
+    #feedbackModal .modal-footer{
+        text-align: -webkit-center;
+        border-top: 0;
+        padding: 0 50px;
+    }
+    #feedbackModal .modal-footer .btn{
+        font-size: 30px;
+        border-color: white;
+        background-color: white;
+    }
+    #feedbackModal .modal-header .close{
+        font-size: 50px;
+        background-color:white;
+        width: 50px;
+        font-weight: 500;
+        opacity:1;
+        border-radius:50%;
+        
+    }
+    #feedbackModal .modal-title{
+        margin: 50px 0 0 5px;
+    }
+    #feedbackModal .modal-body{
+        padding: 20px 40px 20px 40px;
+    }
+    #feedbackModal .modal-body p{
+        padding-right:50px;
+        padding-left:50px;
+        text-align: -webkit-center;
+        font-size: 17px;
+        font-weight: 550;
+    }
+    
+    
+    @media (max-width:577px) {
+        #feedbackModal .modal-dialog{
+            width: 90%;
+            margin: auto;
+        }
+        #feedbackModal .modal-content{
+            height: 440px;
+        }
+        #feedbackModal .modal-header h4 {
+            font-size:25px;
+        }
+        #feedbackModal .modal-footer .btn{
+            font-size: 25px;
+            background-color: white;
+            margin-top:5px;
+        }
+        #feedbackModal .modal-body p{
+            padding:0;
+            text-align: -webkit-center;
+            font-size: 17px;
+        }
+    }
+    @media (max-width:330px) {
+        #feedbackModal .modal-dialog{
+            width: 90%;
+            margin: auto;
+        }
+        #feedbackModal .modal-content{
+            height: 400px;
+        }
+        #feedbackModal .modal-header h4 {
+            font-size:20px;
+        }
+        #feedbackModal .modal-footer .btn{
+            font-size: 20px;
+            background-color: white;
+            margin-top:5px;
+        }
+        #feedbackModal .modal-body p{
+            padding:0;
+            text-align: -webkit-center;
+            font-size: 16px;
+        }
+    }
+</style>
+        
+                        <!-- Piwik -->
+        <script>
+          var _paq = _paq || [];
+                    _paq.push(['disableCookies']);
+                    _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://pstats11.braintrust.at/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 23]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+            g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <noscript><p><img src="https://pstats11.braintrust.at/piwik.php?idsite=18" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
+                                <script>
+            // Let the document know when the mouse is being used (WCAG)
+            document.body.addEventListener('mousedown', function() {
+                document.body.classList.add('using-mouse');
+            });
+            document.body.addEventListener('keydown', function() {
+                document.body.classList.remove('using-mouse');
+            });
+        </script>
+    
+
+</body></html>

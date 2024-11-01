@@ -1,0 +1,259 @@
+/* berufe-autocomplete.css */
+
+#berufeAutocompleteContainer {
+    margin-top: 40px;
+    background: transparent;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+#berufeAutocompleteContainer .ui-widget {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#berufeAutocompleteContainer ul,
+#berufeAutocompleteContainer li {
+    color: inherit !important;
+    background: #FFFFFF !important;
+    border: 0 !important;
+    font-weight: 400 !important;
+}
+
+#berufeAutocompleteContainer h3,
+#berufeAutocompleteContainer p {
+    text-align: center;
+}
+
+#berufeAutocompleteContainer h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#berufeAutocompleteContainer p {
+    font-size: 0.85em;
+    margin-bottom: 30px;
+}
+
+#berufeAutocompleteContainer .ui-menu .ui-menu-item {
+    cursor: auto !important;
+    float: none;
+}
+
+#berufeAutocompleteContainer .ui-menu-item {
+    font-size: 0.9em;
+}
+
+#berufeAutocompleteContainer .ui-autocomplete-category {
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+}
+
+#berufeAutocompleteContainer .ui-autocomplete-category.le {
+    color: #f27e00 !important;
+}
+
+#berufeAutocompleteContainer .ui-autocomplete-category.bhs {
+    color: #1841d9 !important;
+}
+
+#berufeAutocompleteContainer .ui-autocomplete-category.ak {
+    color: #f00c06 !important;
+}
+
+#berufeAutocompleteContainer .ui-autocomplete-category.sonstige1,
+#berufeAutocompleteContainer .ui-autocomplete-category.sonstige2 {
+    color: #007613 !important;
+}
+
+#berufeAutocompleteContainer ul.myauto {
+    border-right: #e4e5e6 1px solid !important;
+    padding-left: 25px !important;
+}
+
+#berufeAutocompleteContainer ul.myauto a {
+    color: #020202;
+}
+
+#berufeAutocompleteContainer ul.myauto a:hover,
+#berufeAutocompleteContainer ul.myauto a:focus {
+    color: #020202;
+    text-decoration: underline;
+    outline-offset: -2px !important;
+}
+
+#berufeAutocompleteContainer ul.myauto:first-of-type {
+    padding-left: 0.4em !important;
+}
+
+#berufeAutocompleteContainer ul.myauto:last-of-type {
+    border-right: 0 !important;
+}
+
+#berufeAutocompleteContainer ul.myauto .ui-menu-item {
+    color: #000000 !important;
+}
+
+ul.myauto {
+    display: table-cell !important;
+    background-image: none !important;
+    background-color: #fff !important;
+    margin: 0 !important;
+    cursor: auto !important;
+    padding-left: 0.4em !important;
+    padding-right: 0.4em !important;
+    width: 23% !important;
+    min-height: 1px !important;
+    position: relative !important;
+    float: none !important;
+    clear: none !important;
+    font-weight: normal !important;
+    color: inherit !important;
+    border-radius: 0 !important;
+    border: 1px solid #d3d3d3 !important;
+    top: auto !important;
+    left: auto !important;
+}
+
+#berufeAutocompleteContainer ul.myauto li.ui-state-focus,
+#berufeAutocompleteContainer ul.myauto li.ui-state-active {
+    margin: auto !important;
+}
+
+#berufeAutocompleteContainer ul.myauto a {
+    color: #020202;
+    border: 1px solid transparent;
+    margin: 0 !important;
+}
+
+#berufeAutocompleteContainer ul.myauto a:hover,
+#berufeAutocompleteContainer ul.myauto a:focus,
+#berufeAutocompleteContainer ul.myauto a.ui-state-active {
+    color: #020202;
+    text-decoration: none !important;
+    outline-offset: -2px !important;
+}
+
+#berufeAutocompleteContainer ul.myauto a.ui-state-active {
+    border: 1px solid #003eff;
+}
+
+#berufeAutocompleteContainer > .row > .ui-widget-content {
+    display: none;
+    background: #FFFFFF !important;
+    left: auto !important;
+    width: 100% !important;
+    top: 0 !important;
+    border: 1px solid #f4c500 !important;
+    border-radius: 2px;
+    margin-top: 0px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#berufeAutocompleteContainer > .row > .ui-widget-content > li {
+    background: #FFFFFF !important;
+    border: 1px solid #f4c500 !important;
+    border-radius: 2px;
+    margin-top: 0px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#berufeAutocompleteContainer .ui-state-active,
+#berufeAutocompleteContainer .ui-widget-content .ui-state-active,
+#berufeAutocompleteContainer .ui-widget-header .ui-state-active,
+#berufeAutocompleteContainer a.ui-button:active,
+#berufeAutocompleteContainer .ui-button:active,
+#berufeAutocompleteContainer .ui-button.ui-state-active:hover {
+    border: 1px solid transparent !important;
+    background: #DDDDDD;
+    color: #333333;
+    font-weight: normal;
+}
+
+#berufeAutocompleteContainer .ui-menu-icon {
+    display: none !important;
+}
+
+#berufeAutocompleteContainer > .row > .ui-widget-content .ui-autocomplete {
+    position: relative !important;
+    width: 100% !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+
+#berufeAutocompleteContainer .berufe-autocomplete-item {
+    display: block!important;
+    line-height: 17px!important;
+    margin-bottom:0.35em!important;
+}
+
+#berufeAutocompleteContainer .berufe-autocomplete-item-text {
+    display:block;
+    font-size: 11px;
+    color: #595858;
+}
+
+/* 2024-01-23 autocomplete design setting with grid */
+#berufeAutocompleteContainer ul.myauto.grid {
+    display: grid !important;
+    grid-auto-flow: column;
+    gap: 0rem;
+}
+
+#berufeAutocompleteContainer ul.myauto.grid {
+    /*grid-auto-rows: 25px;*/
+    /*grid-auto-columns: 1fr;*/
+}
+#berufeAutocompleteContainer .ui-menu .ui-menu-item {
+    /*border: 1px solid black !important;*/
+    display: flex;
+    align-items: center;
+}
+#berufeAutocompleteContainer .ui-autocomplete-category {
+    margin-top: -2px;
+}
+
+#berufeAutocompleteContainer .berufe-autocomplete-item {
+    /*hyphens: auto;*/
+    width: 100%;
+}
+
+/* Fix first autocomplete-item in row => position top */
+#ui-id-1 > .ui-autocomplete-category + .ui-menu-item {
+    align-items: start;
+}
+
+@media (max-width: 979px) {
+    #berufeAutocompleteContainer ul.myauto,
+    #berufeAutocompleteContainer ul.myauto:first-of-type {
+        display: block !important;
+        width: 100% !important;
+        border-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #berufeAutocompleteContainer {
+        right: 47px;
+        background: transparent !important;
+    }
+}
+
+#berufeAutocompleteContainer.keep-focus .ui-autocomplete,
+#berufeAutocompleteContainer.keep-focus .ui-autocomplete {
+    display: block !important;
+}

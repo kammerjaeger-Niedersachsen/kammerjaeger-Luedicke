@@ -1,0 +1,182 @@
+function initSearch(iframe) {
+    /* <![CDATA[ */
+    $.widget("custom.berufecomplete", $.ui.autocomplete, {
+        _create: function() {
+            this._super();
+            this.widget().menu("option", "items", "> :not(.ui-autocomplete-category)");
+        },
+        _renderMenu: function(ul, items) {
+            var that = this,
+                currentCategory = "";
+
+            var categories = {
+                1: {shortname: 'le'},
+                2: {shortname: 'bhs'},
+                3: {shortname: 'ak'},
+                4: {shortname: 'sonstige1'},
+                5: {shortname: 'sonstige2'},
+            }
+
+            var gridRowStart = 1;
+            var gridColumnStart = 1;
+            $.each(items, function(index, item) {
+                var li;
+                if (item.category != currentCategory) {
+                    gridRowStart = 1;
+                    if (currentCategory) {
+                        gridColumnStart++;
+                    }
+                    // position li (list-item) in right row and column
+                    var liGridPosition = " style='grid-column-start: " + gridColumnStart + "; grid-row-start: " + gridRowStart + ";'";
+                    ul.append("<li class='ui-autocomplete-category " + categories[item.category].shortname + "'" + liGridPosition + ">" + item.lexikon + "</li>");
+                    currentCategory = item.category;
+                    gridRowStart++;
+                }
+                li = that._renderItemData(ul, item);
+
+                // hack: show label length
+                // let showTitle = item.label.length;
+                // li.find('a').attr('title', showTitle);
+
+                // position item in right row and column
+                li.css('grid-row-start', gridRowStart);
+                li.css('grid-column-start', gridColumnStart);
+
+                var gridSpanOn = true;
+                if (gridSpanOn && item.label.length > 82) {
+                    // triple hight, if content greater then 82 letters
+                    gridRowStart += 3;
+                    li.css('grid-row-end', gridRowStart);
+                } else if (gridSpanOn && item.label.length > 41) {
+                    // douple hight, if content greater then 41 letters
+                    gridRowStart += 2;
+                    li.css('grid-row-end', gridRowStart);
+                } else {
+                    gridRowStart++;
+                }
+            });
+        },
+
+        _renderItem: function( ul, item ) {
+            return $("<li>")
+                .html('<a class="berufe-autocomplete-item" tabindex="-1" href="'+item.url+'"'+(iframe?' target="_blank"':'')+'>'+item.label+'</a>')
+                .attr("aria-label", item.lexikon+" : "+item.label)
+                .attr('data-id', item.id)
+                .addClass(item.category)
+                .attr("data-value", item.value)
+                .appendTo(ul);
+        }
+    });
+
+    $(document).ready(function() {
+        var keyCode = $.ui.keyCode;
+        $("#q").on("keydown", function(event) {
+            if (typeof event !== "undefined" && typeof keyCode !== 'undefined') {
+                // Fix: leave/close autocomplete and jump to search-btn (immediately), if tab key pressed
+                if (event.keyCode == keyCode.TAB && !event.shiftKey) {
+                    if ($('.ui-autocomplete').length > 0) {
+                        $('.ui-autocomplete').attr("tabindex", -1);
+                    }
+                }
+            }
+        }).berufecomplete({
+            source: Routing.generate('searchBerufSolr'),
+            appendTo: "#berufeAutocompleteContainer > .row > .ui-widget-content > .autocomplete-list",
+            minLength: 3,
+            classes: {
+                "ui-autocomplete": "myauto grid",
+            },
+            open: function(event, ui) {
+                $("#berufeAutocompleteContainer > .row > .ui-widget-content").show();
+                $('.ui-autocomplete').off('menufocus hover mouseover mouseenter');
+            },
+            close: function() {
+                $("#berufeAutocompleteContainer > .row > .ui-widget-content").hide();
+            },
+            select: function (event, ui) {
+                if (event.keyCode == keyCode.TAB) {
+                    var parentElement = $(".input-group");
+                    // var next = $("#search_form");
+                    var nextBtn = $(event.target).closest(parentElement).find("button");
+                    nextBtn[0].focus();
+
+                    // Fix: keep input-text
+                    event.preventDefault();
+                } else if (event.keyCode == keyCode.ENTER) {
+                    var selectedItemId = ui.item.id;
+                    var selectedItem = $("#berufeAutocompleteContainer").find("[data-id='" + selectedItemId + "'] a");
+                    selectedItem[0].click();
+                }
+                return false;
+            },
+        });
+
+        $('.search_checkbox').change(function() {
+            if($(this).attr('id') === 'q_alle') {
+                if($(this).is(':checked')) {
+                    $('.search_checkbox:not(#q_alle)').prop('checked', false);
+                }
+            } else {
+                if ($(this).is(':checked')) {
+                    $('#q_alle').prop('checked', false);
+                }
+            }
+            if($('.search_checkbox:checked').length === 0) {
+                $('#q_alle').prop('checked', true);
+            }
+        });
+
+        $('.input_bereich').change(function() {
+            $(this).parent().children('ul').find('input').prop('checked',this.checked);
+            $(this).removeClass('indeterminate');
+            //getResultsNum();
+        });
+        $('.input_subbereich').change(function() {
+            //getResultsNum();
+            var subbereiche_in_bereich = $(this).parent().parent().find('.input_subbereich').length;
+            var subbereiche_in_bereich_checked = $(this).parent().parent().find('.input_subbereich:checked').length;
+            if(subbereiche_in_bereich == subbereiche_in_bereich_checked) {
+                $(this).parent().parent().parent().children('.input_bereich').prop('checked',true);
+                $(this).parent().parent().parent().children('.input_bereich').removeClass('indeterminate');
+            } else {
+                $(this).parent().parent().parent().children('.input_bereich').prop('checked',false);
+                if(subbereiche_in_bereich_checked > 0) {
+                    $(this).parent().parent().parent().children('.input_bereich').addClass('indeterminate');
+                } else {
+                    $(this).parent().parent().parent().children('.input_bereich').removeClass('indeterminate');
+                }
+            }
+        });
+
+        function getResultsNum() {
+            var subbereiche = $('.input_subbereich:checked').map(function() { return $(this).val(); }).get();
+            $.ajax({
+                method: 'POST',
+                url: Routing.generate('searchBereicheNum'),
+                data: {
+                    subbereiche: subbereiche
+                }
+            }).done(function(data) {
+               $('.bereiche-results .num').html(data);
+            });
+        }
+
+        $("#search_form button.btn").focusin(function() {
+            $('#berufeAutocompleteContainer').removeClass('keep-focus');
+        });
+
+        $(document).keyup(function(e) {
+            if (e.key === "Escape") {
+                $('#berufeAutocompleteContainer').removeClass('keep-focus');
+                if ($(".berufecomplete-autocomplete-item a")) {
+                    $(".berufecomplete-autocomplete-item a").attr("tabindex", -1);
+                }
+            }
+        });
+
+        $(document).click(function(){
+            $("#berufeAutocompleteContainer").removeClass('keep-focus');
+        });
+    });
+    /* ]]> */
+}

@@ -1,0 +1,18 @@
+$(document).ready(function() {
+    // Show/Hide Side Floater - START
+    $(window).scroll(function () {
+        if ($("#kompass_cont").css("display") === "none") {
+            clearTimeout($.data(this, 'scrollTimer'));
+            $.data(this, 'scrollTimer', setTimeout(function () {
+                $("#widget").fadeIn('250');
+            }, 300));
+            $("#widget").fadeOut('200');
+        }
+    });
+    // Show/Hide Side Floater Menu - END
+
+    // (On Mobile) If Widget button is clicked nav menu is closed (if expanded)
+    $("#widget_link").click(function () {
+        $("#main-navbar").removeClass("in");
+    });
+});

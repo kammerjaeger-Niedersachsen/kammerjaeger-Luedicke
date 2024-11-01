@@ -1,0 +1,104 @@
+.floating-kk-widget {
+    position: fixed;
+    box-sizing: border-box;
+    width: 4em;
+    bottom: 10em;
+    right: 1em;
+    height: 36px;
+    z-index: 900;
+}
+
+.floating-kk-widget .widget-text {
+    color: #ffffff;
+}
+
+.floating-kk-widget .widget-search-icon {
+    padding: .4em 0;
+    background-color: #F33149;
+    border-top-left-radius: 10px;
+}
+
+.floating-kk-widget .widget-search-icon:hover img {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -moz-transform: scale(1.1); /* Firefox */
+    -o-transform: scale(1.1); /* Opera */
+    -webkit-transform: scale(1.1); /* Safari And Chrome */
+    transform: scale(1.1); /* Standard Property */
+}
+
+.floating-kk-widget .widget-search-icon img {
+    width: 2.9em;
+
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.floating-kk-widget .widget-text {
+    background-color: #004A9F;
+    border-bottom-left-radius: 10px;
+    line-height: 1.1;
+    padding: .7em 0 .6em 0;
+}
+
+.floating-kk-widget .widget-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .95em;
+}
+
+#kompass_cont {
+    margin-left: -270px !important;
+}
+
+@media (max-width: 1199px) {
+    #kompass_cont {
+        margin-left: -290px !important;
+    }
+}
+
+@media (max-width: 979px) {
+    #kompass_cont {
+        margin-left: -300px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #kompass_cont {
+        right: 5px !important;
+        max-width: 350px !important;
+        margin-left: -350px !important;
+        top: 80px;
+    }
+    #kompass_cont #widget_pfeil {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #kompass_cont {
+        max-width: 400px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    #kompass_cont {
+        max-width: 350px !important;
+        height: 490px !important;
+    }
+}
+@media (max-width: 350px) {
+    #kompass_cont {
+        width: 300px !important;
+        height: 490px !important;
+    }
+}
+
+#kompass_cont {
+    margin-left: 0 !important;
+    top: auto;
+    left: auto !important;
+    right: -14px !important;
+    bottom: -66px !important;
+}

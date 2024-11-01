@@ -1,0 +1,724 @@
+/* beruf-detail.css */
+
+.beruf-detail .btn-default .fa {
+    margin-right: 5px;
+}
+
+.beruf-detail > div h4 {
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+.beruf-detail-share {
+    text-align: right;
+    font-size: 1.7em;
+    margin-top: 3px;
+}
+
+.beruf-detail-share a {
+    margin-left: 3px;
+}
+
+.beruf-detail-share a:hover {
+    color: #BDE0F1;
+}
+
+.beruf-detail .beruf-detail-content > div {
+    padding-top: 10px;
+}
+
+.beruf-detail #sonstiges p {
+    margin: 0 !important;
+}
+
+.beruf-detail #description-full.collapse.in + div {
+    display: none;
+}
+
+.beruf-detail #description-full.collapse.in + div + a .more,
+.beruf-detail #description-full.collapse + div + a .less {
+    display: none;
+}
+
+.beruf-detail #description-full.collapse.in + div + a .less {
+    display: inline;
+}
+
+.beruf-detail .link-box {
+    margin-top: 15px;
+}
+
+.beruf-detail .link-box a .fa {
+    margin-right: 5px;
+}
+
+.beruf-detail .list-group {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.beruf-detail ul li {
+    font-size: 1.15em;
+}
+
+@media (min-width: 720px) {
+    .beruf-detail ul li {
+        font-size: 1.2em;
+    }
+}
+
+.beruf-detail .list-group ul,
+.beruf-detail .list-group li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.beruf-detail .list-group > li:first-of-type {
+    padding-left: 15px;
+}
+
+.beruf-detail #kompetenzen .list-group > li:not(:first-of-type),
+.beruf-detail #weiterbildung .list-group > li {
+    padding-left: 35px;
+}
+
+.beruf-detail .list-group > li > ul > li {
+    padding-left: 23px;
+}
+
+.beruf-detail .list-group > li > ul > li > ul > li {
+    padding-left: 15px;
+}
+
+.beruf-detail .list-group a:not(.btn) {
+    color: #090909;
+    text-decoration: none !important;
+}
+
+.beruf-detail .list-group a:not(.btn):hover {
+    color: #005aaa;
+}
+
+.beruf-detail .list-group .institute a {
+    color: #005aaa;
+    text-decoration: none !important;
+}
+
+.beruf-detail .list-group .institute a:hover {
+    color: #090909;
+}
+
+.beruf-detail #berufsschulen .list-group.panel,
+.beruf-detail #ausbildung .list-group.panel {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.beruf-detail #kompetenzen .list-group > li:not(:first-of-type) > a:before,
+.beruf-detail #weiterbildung .list-group > li > a:before,
+.beruf-detail .list-group > li > ul > li > a:before,
+.beruf-detail #berufsschulen .list-group > .panel-heading > a:before,
+.beruf-detail #ausbildung .list-group > .panel-heading > a:before {
+    font-family: 'FontAwesome';
+    content: '\f056';
+    margin-left: -18px;
+    position: absolute;
+}
+
+.beruf-detail #kompetenzen .list-group > li:not(:first-of-type) > a.collapsed:before,
+.beruf-detail #weiterbildung .list-group > li > a.collapsed:before,
+.beruf-detail .list-group > li > ul > li > a.collapsed:before,
+.beruf-detail #berufsschulen .list-group > .panel-heading > a.collapsed:before,
+.beruf-detail #ausbildung .list-group > .panel-heading > a.collapsed:before {
+    content: '\f055';
+}
+
+.beruf-detail #berufsschulen .list-group > li:first-of-type,
+.beruf-detail #ausbildung .list-group > li:first-of-type {
+    padding-left: 28px;
+}
+
+.beruf-detail #berufsschulen .list-group > li:not(.panel-heading),
+.beruf-detail #ausbildung .list-group > li:not(.panel-heading) {
+    padding: 0;
+}
+
+.beruf-detail #berufsschulen .list-group > li > ul > li,
+.beruf-detail #ausbildung .list-group > li > ul > li {
+    border: 0 none;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: #E3E3E3 1px solid;
+    border-radius: 0;
+    background: transparent;
+}
+
+.beruf-detail #ausbildung .list-group > li > ul > li {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.beruf-detail #ausbildung .list-group > li > ul > li table {
+    margin-bottom: 0;
+}
+
+.beruf-detail #ausbildung .list-group > li > ul > li a {
+    color: #005aaa;
+    font-weight: 400;
+}
+
+.beruf-detail #ausbildung .list-group > li > ul > li a:hover {
+    color: #090909;
+}
+
+.beruf-detail #berufsschulen .list-group .beruffschule-name {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.beruf-detail #berufsschulen .list-group .berufsschule-contact {
+    margin-top: 8px;
+}
+
+.beruf-detail #berufsschulen .list-group .berufsschule-contact .fa {
+    left: 0;
+    position: absolute;
+    top: 3px;
+}
+
+.beruf-detail #berufsschulen .list-group .berufsschule-contact > div {
+    margin-top: 2px;
+    position: relative;
+}
+
+.beruf-detail #berufsschulen .list-group .berufsschule-contact-content {
+    margin-left: 20px;
+    display: block;
+}
+
+.beruf-detail #berufsschulen .list-group .berufsschule-contact a {
+    color: #005aaa;
+}
+
+.beruf-detail #berufsschulen .list-group .berufsschule-contact a:hover {
+    color: #090909;
+}
+
+.beruf-detail #berufsschulen .list-group > li > ul > li:last-child {
+    border-bottom: 0;
+}
+
+.beruf-detail #berufekvs td {
+    font-weight: normal !important;
+}
+
+.beruf-detail #berufekvs th {
+    font-weight: 600 !important;
+}
+
+.beruf-detail #berufekvs td,
+.beruf-detail #berufekvs th {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.beruf-detail #berufekvs tr > th:first-child {
+    padding-right: 40px;
+    vertical-align: bottom;
+}
+
+.beruf-detail #berufekvs .berufekvs-yearstable {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.beruf-detail #berufekvs .berufekvs-schwerpunkt,
+.beruf-detail #lehrlingszahlen .lehrlingszahlen-schwerpunkt,
+.beruf-detail #verwandte .verwandte-schwerpunkt,
+.beruf-detail #ausbildung .ausbildung-name {
+    font-size: 1.05em;
+    font-weight: bold !important;
+    background: #DDDDDD;
+}
+
+.beruf-detail #lehrlingszahlen .lehrlingszahlen-kommentar,
+.beruf-detail #verwandte .verwandte-legende {
+    background: #f9f9f9 none repeat scroll 0 0;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.beruf-detail #lehrlingszahlen .lehrlingszahlen-kommentar p {
+    margin-bottom: 0;
+}
+
+.beruf-detail .berufekvs-lj-th {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.beruf-detail .berufekvs-sonder-tr {
+    background: #F3F3F3 !important;
+}
+
+.beruf-detail .berufekvs-sonder {
+    position: relative;
+    font-size: 0.95em;
+}
+
+.beruf-detail .berufekvs-lj-td {
+    text-align: right;
+}
+
+.beruf-detail .berufekvs-sonder .fa-plus {
+    position: absolute;
+    left: 20px;
+    top: 11px;
+}
+
+.beruf-detail .berufekvs-sonder .sonder-text {
+    display: block;
+    margin-left: 40px;
+}
+
+.beruf-detail #berufekvs .berufekvs-sonder .berufekvs-yearstable {
+    margin-left: 30px;
+}
+
+.beruf-detail .list-group .panel-heading {
+    font-weight: 600;
+}
+
+.beruf-detail .list-group.list-group-striped > li:nth-of-type(2n+1),
+.beruf-detail .list-group.list-group-striped > a:nth-of-type(2n+1) {
+    background-color: #f9f9f9;
+}
+
+.beruf-detail .weiterbildung-details > div {
+    margin-top: 10px;
+}
+
+.beruf-detail #weiterbildung .list-group-item > a:not(.collapsed) > span {
+    font-weight: 600;
+}
+
+.beruf-detail .progress-div {
+    padding-top: 45px;
+}
+
+.beruf-detail .progress-div button {
+    color: #666666;
+    cursor: pointer;
+    float: left;
+    font-size: 1.35em;
+    margin-right: 8px;
+    padding: 0;
+    margin-top: -4px;
+}
+
+.beruf-detail .gehalt-trend {
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.beruf-detail .gehalt-trend .trend {
+    display: inline;
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    padding-right: 35px;
+}
+
+.beruf-detail .gehalt-trend .trend .gleichbleibend::after,
+.beruf-detail .gehalt-trend .trend .sinkend::after,
+.beruf-detail .gehalt-trend .trend .stark.sinkend::after,
+.beruf-detail .gehalt-trend .trend .steigend::after,
+.beruf-detail .gehalt-trend .trend .stark.steigend::after {
+    top: 0;
+}
+
+.beruf-detail .gehalt-trend .label-white {
+    background: #EBEBEB;
+    color: #090909;
+    font-size: 0.95em;
+    font-weight: 600;
+    line-height: 2.5em;
+}
+
+.beruf-detail .gehalt-trend .label {
+    margin-right: 3px;
+}
+
+.beruf-detail {
+    margin-top: 5px;
+}
+
+.beruf-detail .gehalt-info {
+    font-size: .95em;
+    color: #333333;
+    line-height: 1.3em;
+    display: block;
+    width: 80%;
+}
+
+.gehalt-info-sm {
+    margin-top: 1em;
+}
+
+.gehalt-info-sm .gehalt-info {
+    width: 100%;
+}
+
+.beruf-detail h1{
+    border-bottom: #004a7f 3px solid;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+.beruf-detail #offenestellen a .fa {
+    margin-right: 5px;
+}
+
+.beruf-detail .gehalt {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.beruf-detail h2.description,
+.beruf-detail h2.sonstiges {
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+.beruf-detail p {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.beruf-detail .collapse,
+.beruf-detail .collapsing {
+    padding-left: 2px;
+    padding-top: .5em;
+    padding-bottom: .3em;
+}
+
+@media (min-width: 768px) {
+    .beruf-detail .collapse,
+    .beruf-detail .collapsing {
+        padding: 1em;
+    }
+}
+
+.beruf-detail .beruf-header {
+    background: #fafafa none repeat scroll 0 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 5px;
+}
+
+.beruf-detail .beruf-header.lehre {
+    border-top: 5px solid #C14C1A;
+}
+
+.beruf-detail .beruf-header.schule {
+    border-top: 5px solid #004A99!important;
+}
+
+.beruf-detail .beruf-header.uni {
+    border-top: 5px solid #A80014;
+}
+
+.beruf-detail .beruf-header.sonstige,
+.beruf-detail .beruf-header.sonstige1,
+.beruf-detail .beruf-header.sonstige2 {
+    border-top: 5px solid #275A37;
+}
+
+.beruf-detail .beruf-header h1 {
+    color: #020202;
+    border: 0;
+    font-weight: 500;
+    font-size: 2em;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 30px;
+    letter-spacing: -0.03em;
+    line-height: 1em;
+    word-break: break-word;
+}
+
+.beruf-detail .beruf-header .beruf-header-bereiche {
+    font-size: 1em;
+}
+
+.beruf-detail .bereich {
+    font-weight: 600;
+}
+
+.beruf-detail .fa-external-link {
+    margin-left: 5px;
+}
+
+.beruf-detail .btn-default {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 5px;
+}
+
+.beruf-detail .description-link {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.beruf-detail .description-link a {
+    font-size: 13px !important;
+    color: #005aaa !important;
+}
+
+.beruf-detail .description-link a:hover {
+    color: #090909 !important;
+    text-decoration: underline !important;
+}
+
+.beruf-detail .links-elm {
+    color: #333333;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.beruf-detail .links-elm > a.collapsed {
+    /*border-bottom: 1px solid #b1b1b1;*/
+    background-color: #E6EBF0;
+    margin-top: 10px;
+}
+
+.fotos.row figure {
+    border: #FFFFFF;
+}
+.beruf-detail .links-elm a {
+    display: block;
+    color: #2056AE;
+    padding: 12px 50px 12px 25px;
+    background-color: #E6EBF0;
+    margin-top: 10px;
+}
+
+.beruf-detail .links-elm a.collapsed {
+    color: #333333;
+}
+
+.beruf-detail .links-elm a:hover,
+.beruf-detail .links-elm a:focus {
+    color: #2056AE;
+    text-decoration: none;
+}
+
+.beruf-detail .links-elm a:after {
+    content: url(minus.svg);
+    color: #2B91B6;
+    position: absolute;
+    right: 10px;
+    font-size: 0.84em!important;
+    margin-right: 15px;
+}
+
+.beruf-detail .links-elm a.collapsed:after {
+    content: url(plus.svg);
+    color: #646464;
+    margin-right: 15px;
+}
+
+.beruf-detail .links-elm + div.collapse.in {
+    /*border-bottom: 1px solid #b1b1b1;*/
+}
+
+
+.beruf-detail .videos figure,
+.beruf-detail .fotos {
+    margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+    .beruf-detail .videos figure {
+        margin-right: 10px;
+    }
+}
+
+.beruf-detail .video-foto-div {
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-top: 5px !important;
+}
+
+.beruf-detail .videos .thumb,
+.beruf-detail .fotos .thumb {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.beruf-detail .fotos.row {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+}
+
+.beruf-detail .fotos.row > div,
+.beruf-detail .fotos.row > figure {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.beruf-detail .fotos.row img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,.15);
+}
+
+.beruf-detail .videos .thumb:after,
+.beruf-detail .fotos .thumb:after {
+    content: "\f01d";
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    opacity: 0.8;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 8em;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.beruf-detail .fotos .thumb:after {
+    content: "";
+    font-size: 2em;
+}
+
+.beruf-detail .videos .thumb:hover:after,
+.beruf-detail .fotos .thumb:hover:after {
+    opacity: 1;
+    color: #BDE0F1;
+}
+
+.beruf-detail .videos .thumb figure,
+.beruf-detail .fotos .thumb figure {
+    overflow: hidden;
+}
+
+.beruf-detail .videos .thumb img,
+.beruf-detail .fotos .thumb img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 736px;
+    height: 100%;
+}
+
+.beruf-detail .videos .thumb:hover img,
+.beruf-detail .fotos .thumb:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.beruf-detail .videos .video-element {
+    display: block;
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,.15);
+}
+
+.beruf-detail .videos .video-element:hover {
+    text-decoration: none;
+}
+
+.beruf-detail .videos .video-layer {
+    display: none;
+}
+
+.beruf-detail .fotos.row > figure figcaption {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .beruf-detail .berufekvs-sonder {
+        background: #F3F3F3;
+    }
+
+    .beruf-detail-share {
+        text-align: left;
+    }
+
+    .beruf-detail .berufekvs-sonder {
+        padding-top: 7px !important;
+    }
+
+    .beruf-detail .berufekvs-sonder {
+        margin: 10px -5px -5px;
+    }
+
+    .beruf-detail #berufekvs .berufekvs-yearstable {
+        margin-left: 0;
+    }
+
+    .beruf-detail #berufekvs td,
+    .beruf-detail #berufekvs th {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .beruf-detail #berufekvs tr > th:first-child {
+        padding-right: 15px;
+    }
+
+    .beruf-detail .btn-default {
+        float: none !important;
+    }
+
+    .beruf-detail .gehalt-trend .label-white {
+        display: inline-block;
+        margin-bottom: 5px;
+        padding-bottom: 0.5em;
+        padding-top: 0.4em;
+        line-height: inherit;
+    }
+
+    .beruf-detail .btn-default {
+        margin-top: 10px;
+    }
+
+    .beruf-detail .progress-div {
+        padding-top: 15px;
+    }
+
+    .beruf-detail .berufekvs-yearstable th {
+        white-space: nowrap;
+    }
+}
+@media (min-width: 992px) {
+    .video-foto-div.visible-lg {
+        display: flex !important;
+    }
+}
+
+.beruf-detail .fotos .foto-element:focus {
+    outline: 5px auto -webkit-focus-ring-color !important;
+}

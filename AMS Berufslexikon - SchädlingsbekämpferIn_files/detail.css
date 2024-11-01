@@ -1,0 +1,153 @@
+
+.row.detail-3Punkte {
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.row.rechteck {
+    height: 70px;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 18px;
+    background: #ffffff;
+    border: 1px solid #E6EBF0!important;
+}
+span.detail-rechteck, div.detail-rechteck {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .85em;
+    margin-top: 5px;
+}
+.berufsaussichten-grafik{
+    width: 100%;
+    height: 50%;
+}
+.berufsaussichten-grafik .arrow{
+    width: 100%;
+    height: 50%;
+}
+.berufsaussichten-grafik .grafik {
+    width: 100%;
+    height: 90%;
+}
+.berufsaussichten-text {
+    width: 100%;
+    height: 50%;
+}
+div.umorientierung-grafik {
+    width: 100%;
+    height: 40%;
+    margin-top: 10px;
+}
+div.umorientierung-txt {
+    width: 100%;
+    height: 60%;
+    margin-top: 3px;
+    font-weight: 600;
+    font-size: .75em;
+    text-align: center;
+    word-break: break-word;
+}
+.umorientierung-grafik svg.umorientierung {
+    width: 100%;
+    height: 100%;
+}
+.umorientierung-grafik div.umorientierung-txt {
+    width: 100%;
+    height: 60%;
+}
+
+.gehalt-text {
+    position: relative;
+    height: 100%;
+    padding: 13px 15px;
+}
+
+.gehalt-text .label {
+    padding-left: 0;
+}
+
+@media (min-width: 768px) {
+    span.detail-rechteck, div.detail-rechteck {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    .gehalt-zahl {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .gehalt-text {
+        text-align: center;
+    }
+    div.umorientierung-txt a {
+        font-weight: 600;
+    }
+    .row.detail-3Punkte {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .gehalt-text {
+        margin-bottom: 3px;
+    }
+
+    .berufsaussichten-grafik {
+        width: 30%;
+        height:100%;
+        margin-left: -8px;
+    }
+    .berufsaussichten-grafik svg.arrow {
+        margin-top: -5px;
+        margin-bottom: -18px;
+        margin-left: 1px!important;
+        width: 100%;
+        height: 35%;
+    }
+    .berufsaussichten-grafik svg.grafik {
+        margin-top: -5px;
+        margin-bottom: -22px;
+        margin-left: 10px;
+        mwidth: 100%;
+        height: 60%;
+    }
+    .berufsaussichten-text {
+        width: 70%;
+        height: 100%;
+        float: right;
+        margin-right: -18px;
+        margin-top: -51px;
+    }
+    .berufsaussichten-text div.detail-rechteck {
+        text-decoration: underline;
+        margin-left: 15px;
+        margin-top: 3px;
+        font-size: .84em;
+    }
+    svg.umorientierung {
+        margin-top: 17px;
+    }
+    div.umorientierung-grafik {
+        width: 20%;
+        height: 100%;
+        baseline-shift: 100%;
+        margin-left: 15px;
+        margin-top: 2px;
+    }
+    div.umorientierung-txt {
+        width: 80%;
+        height: 100%;
+        float: right;
+        margin-right: 5px;
+        margin-top: -45px;
+        font-weight: 600;
+    }
+    .umorientierung-grafik svg.umorientierung {
+        width: auto;
+        height: auto;
+    }
+}
+

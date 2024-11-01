@@ -1,0 +1,408 @@
+.flickity-carousel {
+    background: #EEE;
+}
+
+.notPublished {
+    text-decoration: line-through;
+}
+
+.flickity-carousel-cell {
+    width: 100%;
+    margin-right: 10px;
+    background: #F5C600;
+}
+
+@media (min-width: 768px) {
+    .row-blog-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row-blog-content .schwerpunkt-carousel-col-left,
+    .row-blog-content .schwerpunkt-carousel-col-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-content-btns {
+        position: absolute;
+        bottom: 5rem;
+        width: 70%;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin-left: 0.13em;
+    margin-right: 0.13em;
+    font-size: 0.85em;
+    font-weight: 700;
+    border: 1px solid #DDD;
+    border-radius: 0.4em;
+    background-color: #e6e6e6;
+    opacity: .8;
+    width:3em;
+}
+
+.button:hover:not([disabled],.is-selected) {
+    background-color: #e6e6e6;
+    color:  black;
+    opacity: 1;
+}
+.button.is-selected {
+    background-color:  #f5c602;
+    color: white;
+    opacity: 1;
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button-group .button {
+    float: left;
+    border-radius: 0;
+    border-right-width: 0;
+}
+
+/* ---- button-row ---- */
+
+.button-row {
+    text-align: center;
+}
+
+.schwerpunkt-carousel {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.schwerpunkt-carousel .schwerpunkt-row-top {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #ffffff;
+}
+
+.schwerpunkt-carousel h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.schwerpunkt-carousel h2 .schwerpunkt-berufe-title {
+    display: block;
+    font-weight: 600;
+}
+
+.schwerpunkt-carousel .blog-created-date {
+    color:#484848;
+    margin-bottom:0.5rem;
+}
+
+.schwerpunkt-carousel .blog-content {
+    margin-bottom: 1em;
+}
+
+.schwerpunkt-carousel a.btn {
+    border: none;
+}
+
+.schwerpunkt-carousel a.btn:first-of-type {
+    margin-bottom: 5px;
+}
+
+.schwerpunkt-row-bottom {
+    height: 100%;
+}
+
+.schwerpunkt-carousel .schwerpunkt-row-bg-img {
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 155px !important;
+}
+
+.schwerpunkt-carousel .schwerpunkt-overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .8);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.schwerpunkt-carousel .schwerpunkt-overlay p {
+    padding: 5px;
+    margin: 0;
+}
+
+.schwerpunkt-carousel .teaser-content {
+    padding: 5px;
+}
+
+.schwerpunkt-carousel .schwerpunkt-overlay p,
+.schwerpunkt-carousel .schwerpunkt-overlay p a {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.schwerpunkt-carousel .schwerpunkt-overlay a img {
+    width: 22px;
+    height: 15px;
+}
+
+.schwerpunkt-carousel .schwerpunkt-overlay-link {
+    position: absolute;
+    top: -14px;
+    right: 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px 2px 5px;
+}
+
+.schwerpunkt-carousel .col-img-overlay {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.schwerpunkt-carousel .flickity-page-dots .dot {
+    margin-right: 4px;
+}
+
+.schwerpunkt-carousel img.play-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position:absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    margin:auto;
+    opacity: .8;
+    transition: all .2s;
+}
+
+.schwerpunkt-carousel img.play-icon:hover {
+    -webkit-transform: scale(1.04);
+    -webkit-transform-origin: center center;
+    -moz-transform: scale(1.04);
+    -moz-transform-origin: center center;
+    transform: scale(1.04);
+    transform-origin: center center;
+}
+
+.diffused-box-shadow {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1),
+    0 2px 2px rgba(0, 0, 0, .1),
+    0 4px 4px rgba(0, 0, 0, .1),
+    0 8px 8px rgba(0, 0, 0, .1),
+    0 16px 16px rgba(0, 0, 0, .1),
+    0 32px 32px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1),
+    0 2px 2px rgba(0, 0, 0, .1),
+    0 4px 4px rgba(0, 0, 0, .1),
+    0 8px 8px rgba(0, 0, 0, .1),
+    0 16px 16px rgba(0, 0, 0, .1),
+    0 32px 32px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1),
+    0 2px 2px rgba(0, 0, 0, .1),
+    0 4px 4px rgba(0, 0, 0, .1),
+    0 8px 8px rgba(0, 0, 0, .1),
+    0 16px 16px rgba(0, 0, 0, .1),
+    0 32px 32px rgba(0, 0, 0, .1);
+}
+
+.icon-published {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.icon-published-teaser {
+    top: 5px;
+}
+
+.notPublished {
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 768px) {
+    .schwerpunkt-carousel h2 {
+        font-size: 2.4rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    .schwerpunkt-carousel-col-left {
+        padding: 6rem 2rem 6rem 4rem;
+    }
+
+    .schwerpunkt-carousel-col-left p {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+
+    .schwerpunkt-carousel-col-left a.btn {
+        padding: 1.3rem 0;
+        font-weight: 600;
+    }
+
+    .schwerpunkt-carousel-col-left a.btn:first-of-type {
+        margin-bottom: 1.5rem;
+    }
+
+    .schwerpunkt-carousel-col-right {
+        padding-right: 0;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-row-bg-img {
+        height: 50% !important;
+        outline: 2px solid #ffffff;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay {
+        background-color: rgba(255, 255, 255, 1);
+        left: auto;
+        right: 33px;
+        width: 250px;
+        height: 160px;
+        padding: .5rem;
+    }
+
+    .schwerpunkt-carousel .col-img-overlay {
+        width: 255px;
+        height: 255px;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay p {
+        font-size: 1.1rem;
+        padding-bottom: 0;
+    }
+
+    .schwerpunkt-carousel .teaser-content {
+        font-size: 1.2rem;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay-link {
+        top: auto;
+        bottom: 3px;
+        right: 15px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 2px 2px 5px;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 0;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay a img {
+        width: 18px;
+        height: 15px;
+        margin-left: 5px;
+        vertical-align: bottom;
+        margin-bottom: 1px;
+    }
+
+    .schwerpunkt-carousel img.play-icon {
+        width: 180px;
+        height: 180px;
+        left: -150px;
+    }
+
+    .icon-published {
+        top: 10px;
+        right: 10px;
+    }
+
+    .icon-published-teaser {
+        right: 30px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .schwerpunkt-carousel {
+        background: #fff;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay {
+        height: 170px;
+    }
+
+    .schwerpunkt-carousel img.play-icon {
+        width: 200px;
+        height: 200px;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .schwerpunkt-carousel .schwerpunkt-carousel-col-left {
+        width: 30%;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-carousel-col-right {
+        width: 70%;
+    }
+
+    .schwerpunkt-carousel-col-left {
+        padding: 7rem 4rem 7rem 4rem;
+    }
+
+    .schwerpunkt-carousel h2 {
+        margin-bottom: 4rem;
+    }
+
+    .schwerpunkt-carousel-col-left p {
+        margin-bottom: 5rem;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay {
+        height: 210px;
+        right: 40px;
+        width: 290px;
+        padding: 1.4rem;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .schwerpunkt-carousel .teaser-content {
+        font-size: 1.3rem;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay p,
+    .schwerpunkt-carousel .schwerpunkt-overlay p a {
+        font-size: 1.4rem;
+    }
+
+    .schwerpunkt-carousel .schwerpunkt-overlay-link {
+        bottom: 15px;
+        right: 30px;
+        font-size: 1.2rem;
+    }
+
+    .schwerpunkt-carousel .col-img-overlay {
+        margin-top: 30px;
+    }
+
+    .schwerpunkt-carousel img.play-icon {
+        width: 260px;
+        height: 260px;
+    }
+}
